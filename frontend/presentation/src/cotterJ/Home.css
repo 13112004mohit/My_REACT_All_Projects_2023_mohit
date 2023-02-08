@@ -1,0 +1,136 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.hpage .img{
+width: 100vw;
+height: 96vh;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+*::-webkit-scrollbar{
+ display: none;
+}
+h1{
+    color: rgb(148, 130, 130);
+}
+.Ques{
+    width: 80px;
+    position: relative;
+    top: 20px;
+}
+
+.linewise{
+    /* border: 2px solid red; */
+    margin: 0 5px;
+}
+.whatish1{
+    font-size:4rem;
+    color: rgba(111, 0, 255, 0.977);
+    text-shadow: 5px 6px 2px  rgba(65, 63, 70, 0.349);
+    margin: 5% 0% 0% 18%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Stline{
+    border: 1px solid rgb(144, 0, 255);
+    position: relative;
+    width: 3px;
+    /* height: 180vh; */
+    background-color: rgb(144, 0, 255);
+    left: 35%;
+
+}
+.paira{
+    width: 40vw;
+    display: flex;
+    margin-top: 10vh;
+}
+
+.dottimgs{
+    width: 44px;
+    height: 38px;
+    position: relative;
+    right: 20px;
+}
+
+ .dott1{
+    width: 40px ;
+    height: 40px ;
+    background-color: rgba(178, 189, 247, 0.338);
+    place-self: center;
+    margin-left: -2.9%;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+.dott2{
+    position: relative;
+    width: 30px ;
+    height: 30px ;
+    background-color: rgba(120, 57, 237, 0.26);
+    top: 13%;
+    left: 12%;
+     border-radius: 100%; 
+ } 
+ .dott3{
+    position: relative;
+    width: 20px ;
+    height: 20px ;
+    background-color: rgba(131, 25, 237, 0.774);
+    top: 16%;
+    left: 15%;
+     border-radius: 100%;
+}  
+
+.pairagraf{
+    padding: 10px;
+    font-size: 21px;
+    padding-left: 10px;
+    /* font-weight: 500; */
+    font-family: 'Noto Serif', serif;
+}
+.pairagraf span{
+   color: rgb(104, 96, 93);
+}
+.cotterStrimg{
+    width: 30vw;
+    position: absolute;
+    left: -33vw;
+}
+.Appcotterjoint {
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.Appcoh1{
+    font-size:4rem;
+    color: rgba(122, 5, 255, 0.922);
+    text-shadow: 5px 6px 2px  rgba(83, 79, 89, 0.441);
+    margin: 7% 0% 2% 0%;
+   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.boxes{
+    width: 60vw;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,
+         minmax(400px,1fr));
+}
+
+.box{
+    background: rgba(228, 250, 244, 0.477);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow:3px 4px 6px rgba(148, 155, 160, 0.912);
+}
+.box p{
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+}

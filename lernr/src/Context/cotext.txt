@@ -1,0 +1,60 @@
+ContxtApi vs  useContext (context Hook )
+ 
+both are differnet 
+
+USING ====>> ContextApi we write like that 
+1.context create ==>                   const Mycontext = createContext()
+2.provider to provide our data ==>      Mycontext.Provider    in return
+3.consumer recived data  ==>            {(data)=>{data.name}} like that [this is lenthy process]
+
+
+................................................................................................................
+
+USING ====>>  useContext we write like that
+1.context create ==>                   const Mycontext = createContext()
+2.provider to provide our data ==>      Mycontext.Provider    in return
+3.useContext to recived data  ==>      const data = useContext(where's data come)
+
+NOTE: we can see here both 1&2 setp are same but 3rd step is different and useContext is simple
+      campare to consumer so consumer remove from React mean not use consumer use useContext
+NOTE: whew you create main context then carefull  
+
+const AppContext = createContext();
+const Context_Api_Main_2nd = ({children}) => {   //children name must be not wrong
+  return (
+    <>
+         <AppContext.Provider value={'mohit'}>
+               {children}
+         </AppContext.Provider>
+    </>
+  )
+}
+export {AppContext,Context_Api_Main_2nd} 
+Context_Api_Main_2nd should we wrap in index file like that
+
+import {MainContext} from "./Context/Context_Api_Main_2nd";
+ReactDOM.render(  
+  <MainContext>
+     <here you app name/>
+  </MainContext>
+)
+
+    
+
+.....................................................................................................................
+custome hook creation 
+import {useContext} from 'react'
+import {Appcontext} from './context'
+
+yha pr hme shirt ek ke liye dono ko hr page me jha pr context ka use krna hoga aise hi import krna 
+ho rha hai to hmm ise short kr denge 
+hmm uss page me jayenge jha pr context create kre hai 
+aur wha pr use ka use krke ek custome hook  useGlobalContext ka function create krenge 
+
+const useGlobalContext =()=>{
+      return useContext(Appcontext)
+}
+export {useGlobalContext,Appcontext}
+
+now abb jha hme dono ko import krna tha aabb bs only useGlobalContext ko import krna hoga
+import useGlobalContext from './context'

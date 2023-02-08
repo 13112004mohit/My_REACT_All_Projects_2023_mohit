@@ -1,0 +1,38 @@
+
+.notemain{
+    padding: 5px;
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5%;
+    border: 1px solid rgba(204, 204, 204, 0.479);
+    box-shadow: 3px 4px 9px #ccc;
+}
+.notemain h3{
+    /* text-align: center; */
+    align-items: flex-start;
+}
+.notemain button{
+    align-self: stretch;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 80%;
+    bottom: 5%;
+    border-radius: 50%;
+    border: none;
+    transition: .3s ease-in;
+    box-shadow: 2px 3px 8px #ccc;
+}
+.notemain button img{
+    width: 30px;
+    height: 30px;
+}
+.notemain button:hover{
+    background-color: #72fbeba5;
+}
+
+
+
+

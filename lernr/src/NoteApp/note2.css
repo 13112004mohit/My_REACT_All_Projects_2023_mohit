@@ -1,0 +1,21 @@
+#main{
+    width:100%;
+    height:47vh;
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+#maincontent{
+    width:100%;
+    height:46vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0% 20%;
+    overflow: scroll;
+    /* border: 2px solid red; */
+    overflow: scroll;
+}
+ #maincontent::-webkit-scrollbar{
+    display: none;
+}
+

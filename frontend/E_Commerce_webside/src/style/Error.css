@@ -1,0 +1,10 @@
+.errmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    padding: 3%;
+    background-color: rgba(231, 238, 244, 0.445);
+    box-shadow: 0 0 19px rgb(207, 225, 244);
+    border-radius: 20px;
+}

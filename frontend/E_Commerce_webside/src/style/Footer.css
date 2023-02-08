@@ -1,0 +1,75 @@
+.foomain{
+    display: grid;
+    background-color: rgba(7, 30, 78, 0.884);
+    color: white;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    place-items: center;
+    grid-gap: 10px;
+    padding: 3rem 15rem;
+    z-index: 19;
+}
+
+.foobox p{
+    color: rgb(255, 255, 255);
+}
+.foobox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.foobox-icon{
+    width: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foobox-icon i{
+    font-size: 20px;  
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(203, 255, 236);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.foobox input{
+    width: 14rem;
+    padding: 8px 10px;
+    font-size: 15px;
+}
+.foobox button{
+    margin-top: 5px;
+}
+#call{
+    color: white;
+}
+.fooRev{
+    display: grid;
+    background-color: rgba(7, 30, 78, 0.884);
+    color: white;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    place-items: center;
+    grid-gap: 10px;
+    padding: 1rem 20rem;
+}
+
+.fooRev p{
+    color: white;
+}
+
+.foostarat{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(193, 185, 185, 0.5);
+    color: white;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    place-items: center;
+    grid-gap: 10px;
+    position: relative;
+    bottom: -2.5rem;
+    border-radius: 15px;
+    margin: 0rem 20rem;
+    padding: 1rem 5rem;
+    z-index: 3;
+}

@@ -1,0 +1,14 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Splash&display=swap'); */
+
+
+body {
+  margin: 0;
+ }
+
+
+.heading{
+  color: red;
+  font-family: 'Splash', cursive;
+}

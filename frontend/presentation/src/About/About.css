@@ -1,0 +1,198 @@
+
+.Abmain{
+    /* border: 2px solid red; */
+    position: relative;
+    width: 100vw;
+    height: 220vh;
+    bottom: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #251a44;
+}
+.Abrow1{
+    width: 60vw;
+    position: relative;
+    right: 20%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+.AboutContainer{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width: 40vw;
+    top: 1rem;
+}
+.AboutContainer h1{
+   color: rgb(227, 109, 207);
+   margin-top: 20px;
+}
+
+.AboutContainer .Aicon{
+   width: 30px;
+   position: relative;
+   top: 28px;
+   border-radius: 60%;
+}
+.AboutContainer p:hover {
+    border-bottom: 2px solid rgb(0, 255, 251);
+    cursor: pointer;
+}
+.AboutContainer p{
+    font-size: 20px;
+    margin: -5px 0px;
+     padding: 5px;
+    color: rgb(235, 226, 226);
+    border-bottom: 2px solid rgba(255, 0, 0, 0);
+    position: relative;
+    left: 30px;
+    font-family: 'Noto Serif', cursive;
+}
+.AboutContainer hr{
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    background-color: #fff;
+}
+.Abrow2{
+    position: fixed;
+    left: 60%;
+    width: 40vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.Aimg{
+    position: relative;
+    left: 40px;
+    top: 30%;
+    width: 200px;
+    z-index: 298;
+    border: 3px solid rgb(170, 0, 255);
+    box-shadow: 5px 5px 8px rgb(255, 251, 251);
+}
+
+
+/* TExt Glowing */
+
+.h2{
+    position: relative;
+    bottom: 2rem;
+    font-size: 6em;
+    letter-spacing: 9px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 2px linear-gradient(transparent,#0004);
+    line-height: 0.7em;
+   outline: none;
+   text-shadow: 2px 0px 18px rgb(255, 255, 255);
+   animation: animateh2 2s linear infinite;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@keyframes animateh2{
+   0%
+   {
+       color:#0e3742;
+       text-shadow: none;
+
+   }
+   /* 18.1%, 20.1%, 30% ,50%, 60.1%, 65% , 80.1% ,90% ,90.1% , 100%{ */
+   100%{
+       color: #fff;
+       text-shadow: 0 0 10 px #03bcf4,
+       0 0 20px #03bcf4,
+       0 0 40px #03bcf4,
+       0 0 80px #03bcf4,
+       0 0 160px #03bcf4
+   }
+}
+  .h2:hover{
+       color: rgb(0, 242, 255);
+       cursor: pointer;
+       animation: none;
+   }
+
+.cube1{
+    position: relative;
+    bottom: 27rem;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform:rotateX(-30deg);   
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+}
+
+/* CUBE1 cube1 */
+.cube1 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+.cube1 div span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#15151562,#ff00f238);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+.top1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(38, 36, 36, 0.215);
+    transform: rotateX(90deg) translateZ(150px);
+}
+.top1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background:rgba(255, 0, 255, 0.779) ;
+    transform: translateZ(-380px);
+    filter: blur(20px);   
+    box-shadow: 0px 0px 80px rgba(255, 0, 208, 0.269); 
+
+}
+.cube1:hover{  
+    cursor: none;
+    animation: animate 20s linear infinite;
+}
+.cube1:hover div span {
+    background: linear-gradient(#1d1d1f55,#ffffff57);
+}
+.cube1:hover .top1{
+    background: rgba(32, 32, 33, 0.283);
+}
+.cube1:hover .top1::before{
+    background:rgb(255, 255, 255) ;
+    box-shadow: 0px 0px 80px rgba(255, 255, 255, 0.333);
+}

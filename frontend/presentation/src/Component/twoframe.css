@@ -1,0 +1,27 @@
+
+
+.twofrm{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.vdodiv{
+    height: 58vh;
+    width: 57%;
+    display: flex;
+    align-items: center;
+}
+.vdocotter{
+    width: 56vw;
+}
+.imgdiv{
+    display: flex;
+    align-items: center;
+    height: 58vh;
+    width: 40%;
+    overflow: hidden;
+}
+.imgsrc{
+    width: 100%;
+}

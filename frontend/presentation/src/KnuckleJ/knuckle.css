@@ -1,0 +1,114 @@
+
+
+.knudivMain{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.whatknuh1{
+    font-size:4rem;
+    color: rgba(45, 45, 51, 0.977);
+    text-shadow: 5px 6px 2px  rgba(65, 63, 70, 0.349);
+    margin-bottom: 10rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ques{
+    width: 80px;
+    position: relative;
+    top: 14px;
+    transition: .3s ease;
+
+}
+.ques:hover{
+ box-shadow: 3px 3px 7px rgb(116, 112, 112);
+}
+.pairaK{
+    width: 80vw;
+    height: auto;
+}
+.pairaK p:hover{
+    color: rgb(46, 22, 2);
+    cursor: pointer;
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+}
+
+.WhknujL{
+   width: 35vw;
+}
+.WhknujR{
+    position: relative;
+    left: 75%;
+    width: 35vw;
+}
+.pairagraKL1{
+    position:relative;
+    bottom: 13vh;
+    left: 8rem;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.pairagraKL2{
+    position:relative;
+    bottom: 19vh;
+    left: 8rem;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+
+.pairagraKR1{
+    position:relative;
+    bottom: 15vh;
+    right: 19rem;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.pairagraKR2{
+    position:relative;
+    bottom: 18vh;
+    right: 19rem;
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+
+.knlimgset{
+    position:relative;
+    bottom: 33vh;
+    left: 8rem;
+   width: 24rem;
+
+}
+
+.Appknudiv{
+    
+    width: 48vw;
+    position: relative;
+    bottom: 10vh;
+}
+.Appknudiv p{
+    font-size: 30px;
+    padding: 30px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.arrowimg{
+    position: relative ;
+    top: 5px;
+    right: 5px;
+    transform: rotate(20deg);
+    width: 30px;
+    transition: .3s ease-in-out;
+}
+.Appknudiv p:hover .arrowimg {
+    border-radius: 60%;
+    box-shadow:inset 4px -1px 6px rgb(146, 143, 141), 2px 3px 5px rgb(164, 156, 156) ;
+}

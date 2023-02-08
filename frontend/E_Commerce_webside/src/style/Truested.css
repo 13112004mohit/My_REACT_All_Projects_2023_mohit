@@ -1,0 +1,27 @@
+.trustmaindv{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   background-color: rgba(179, 223, 247, 0.228);
+   margin-bottom: 5rem;
+
+}
+
+.truestP{
+    text-align: center;
+}
+.truestedcompany{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.trustimg{
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+}
+.trustimg img{
+    width: 100%;
+}

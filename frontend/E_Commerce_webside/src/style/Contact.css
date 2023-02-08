@@ -1,0 +1,52 @@
+.contactfmain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.contactfcol {
+    width: 30vw;
+}
+.contactfcol form input{
+    padding: 5px;
+    font-size: 20px;
+    width: 30vw;
+    margin: 10px 0;
+    border: 2px solid rgba(58, 65, 74, 0.276);
+    display: flex;
+    flex-direction: column;
+}
+.contactfcol form input:focus{
+   outline: none;
+}
+.contactfcol form textarea{
+    padding: 5px;
+    font-size: 20px;
+    width: 30vw;
+    max-width: 30vw;
+    min-width: 30vw;
+    height: 30vh;
+    max-height: 30vh;
+    min-height: 30vh;
+    margin: 10px 0;
+    border: 2px solid rgba(58, 65, 74, 0.276);
+    display: flex;
+    flex-direction: column;
+}
+.contactfcol form textarea:focus{
+ outline: none;
+}
+.contactfcol form .btn{
+    padding: 5px;
+    width: 8rem;
+    place-items: center;
+    cursor: pointer;
+    border: 2px solid rgb(0, 200, 255);
+    background-color: rgb(0, 162, 255);
+    color: rgb(255, 255, 255);
+}
+.contactfcol form .btn:focus{
+    border: 2px solid rgb(208, 255, 0);
+    color: rgb(191, 255, 0);
+}

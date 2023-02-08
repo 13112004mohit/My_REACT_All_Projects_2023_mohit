@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+.Netheading{
+    width: 100vw;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: xx-large;
+    flex-wrap: wrap;
+    font-family: 'Berkshire Swash', cursive;
+    padding: 20px;
+    text-shadow: 5px 5px 3px rgb(56, 106, 128);
+    color: rgba(232, 235, 233, 0.991);
+    background-color: rgba(1, 143, 171, 0.669);
+}
+
+.body{
+    position: relative;
+    top: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(189, 182, 182, 0.322);
+  
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.cardbody{
+    width: 320px;
+    padding: 0px 0 40px 0;
+    margin: 10px ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+    background-color: #fff;
+   
+
+}
+.cardbody:hover{
+   box-shadow: 9px 8px 15px rgba(112, 107, 118, 0.584);
+   /* border: 1px solid rgba(112, 107, 118, 0.584); */
+   transition: .3s ease;
+
+}
+
+.cardbody .imgbox{
+    border: none;
+    width: 320px;
+    height: 250px;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;
+    /* background-image:url('gangunam.jpg'); */
+    background-color: rgba(227, 214, 214, 0.806);
+    background-position: center;
+    background-size: cover;
+    transition: .3s ease;
+    overflow: hidden;
+}
+
+.cardbody .imgbox img{
+    width: 320px;
+    height: 250px;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: .3s ease-out;
+   
+}
+.cardbody .imgbox img:hover{
+    cursor: pointer;
+    width: 350px;
+    height: 280px;
+   
+    /* transform: scale(-1, 1); */
+    /* transform: rotateY(180deg); */
+}
+
+.netCom{
+    color: rgb(250, 69, 3);
+    font-weight: bold;
+    text-shadow: 4px 4px 3px rgba(221, 165, 119, 0.826);
+    font-size: 20px;
+    align-self: flex-start;
+    margin: 14px  20px 7px   20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.netMN{
+    color: rgb(141, 199, 250);
+    margin-left: 20px;
+    align-self: flex-start;
+    font-size: 22px;
+}
+.rating{
+   margin: 0 0  30px 20px;
+   align-self: flex-start;
+}
+
+.btn{
+    border: none;
+    opacity: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(0, 255, 234);
+    color: rgb(0, 255, 238);
+    transition: .5s ease-in-out;
+}
+.btn:hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgba(195, 204, 202, 0.79);
+    border: 2px solid rgb(195, 204, 202, 0.79) ;
+    opacity: none;
+    
+}
+

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.maindivv{
+    display: flex;
+    flex-direction: column;
+    /* align-content: center; */
+    /* justify-content: center; */
+    border: 2px solid rebeccapurple;
+    width: 50vw;
+    max-height: 80vh;
+    overflow-Y: scroll;
+}
+.main-heading  p{
+   cursor: pointer; 
+   box-shadow:none;
+}
+.maindivv::-webkit-scrollbar{
+    display: none;
+}
+.main-heading{
+   display: flex;
+   justify-content: space-between;
+   margin: 5px;
+   border-radius: 4px 4px 0 0;
+   box-shadow:inset 0px 10px 10px rgba(172, 166, 166, 0.441);
+   /* border: 2px solid rgba(102, 51, 153, 0.782); */
+}
+.answer{
+    color: #1a53ff;
+    margin: -15px 5px 15px 5px;
+    box-shadow: 0px 7px 5px rgba(69, 65, 73, 0.496); 
+    border-radius: 5px;
+    font-size: 18px;
+}
