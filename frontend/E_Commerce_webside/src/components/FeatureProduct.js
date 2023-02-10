@@ -1,6 +1,7 @@
 import React from 'react'
 import { useProductContext } from '../context/productcontext';
 import Product from './Product';
+import '../style/featureProduct.css'
 
 const FeatureProduct = () => {
         const {isLoading ,featureProducts} = useProductContext();
@@ -11,8 +12,8 @@ const FeatureProduct = () => {
   return (
 
     <>
-       <div className="container">
-          <div className="container">
+       <div className="featureProduct_main_container">
+          <div className="feature_P_container">
                 <div className="intro_data">Check Now</div>
                 <div className="common_heading">Our Feature services</div>
                 <div className="grid grid_three_column">

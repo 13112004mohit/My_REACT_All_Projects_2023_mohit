@@ -25,7 +25,7 @@ import MainContext from "./Context/UseContext_Hook_Main_2nd";
 // import Ch5formvvvshort from './Hook/Ch5formvvvshort'
 // import Todoapp from './todolist/todo'
 // import Accordino from './AccordionApp/Accordino'
-import NoteApp from './NoteApp/main'
+// import NoteApp from './NoteApp/main'
 
 /////////////////////////
 
@@ -45,6 +45,8 @@ import NoteApp from './NoteApp/main'
   // import ShortCircuitinreact from './ShortCircuit/ShortCircuitinreact'
   // import ScrollAnimation from './ScrollAnimation/ScrollAnimation'
 // import UseReducer from './Use_ReducerHOOK/Reducer'
+// import Uncontrolledform from './useRef__UnControlled_form/Uncontrolledform'
+import UseLayoutEffect from './useLayoutEffect_Hook/layout_hook'
 
 
   //  <></>  <--- this is Fragement we can write this things from this other way <ReactFragement><ReactFragement/>
@@ -73,7 +75,7 @@ ReactDOM.render(
         {/* <Ch5formvvvshort/> */}
         {/* <Todoapp/> */}
         {/* <Accordino/> */}
-        <NoteApp/>
+        {/* <NoteApp/> */}
         {/* ///////////////////////////////// */}
 
         {/* <ContextApi/> */}
@@ -94,6 +96,8 @@ ReactDOM.render(
         {/* <ShortCircuitinreact/> */}
         {/* <ScrollAnimation/> */}
         {/* <UseReducer/> */}
+        {/* <Uncontrolledform/> */}
+        <UseLayoutEffect/>
     </MainContext>
   </BrowserRouter>,
   document.getElementById("root")

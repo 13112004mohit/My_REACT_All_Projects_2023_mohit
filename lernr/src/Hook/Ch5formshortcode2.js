@@ -85,8 +85,7 @@ export default function Ch5forms2() {
     
     
     const chang =() =>{
-        // event.preventDefault(); //form use krne pr enter krne me bhi submit hota hai bina button press kiye
-                                  //if when use form then not use preventDefault then show and suddenly remove and refresh page 
+        // event.preventDefault();  //by default form submit nn ho jaye isliye preventDefalut() ka use krte hai means jb hmm form ko enter ka button press krke submit kre to wo page refresh ka krde
         setText(text.fname);
         setText(text.lname)
         setText(text.email)

@@ -1,0 +1,29 @@
+.featureProduct_main_container{
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(220, 218, 218, 0.223);
+}
+
+.feature_P_container{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+}
+.intro_data{
+        color: rgb(94, 93, 91);
+}
+.common_heading{
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+        font-size: 30px;
+}
+.grid_three_column{
+        width: 80vw;
+        display: grid;
+        grid-template-columns: repeat(3,minmax(19vw,1fr));
+        justify-items: center;
+        align-items: center;
+}
