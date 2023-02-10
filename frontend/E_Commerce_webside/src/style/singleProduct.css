@@ -1,0 +1,121 @@
+.singlePgcontainer{
+        width: 100%;
+        padding: 10vh 10vw;
+        display: flex;       
+}
+.grid_two_column{
+        width: 100vw;     
+        display:grid;
+        grid-template-columns: repeat(2,1fr);        
+        grid-gap: 20px;
+}
+.product_images{
+        display:flex;
+        gap: 10px;
+        width: 100%;
+        height: 65vh;
+        justify-items: center;
+        align-items: center;
+      overflow: hidden;
+}
+/* image singleProduct image */
+.grid_four_column{
+        /* display: flex;
+        justify-content: space-evenly; */
+
+}
+.box_image_style{
+        width: 9vw;
+        height: 15vh;
+}
+.main_screen{
+        width: 100%;
+        height: 60vh;
+        object-fit: fill;
+}
+.main_screen_image{
+        width: 100%;
+        height: 100%;
+}
+
+.Product_data{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+}
+.Product_data>h2{
+        font-weight: 500;
+}
+.icon_star{
+     color: rgb(243, 181, 9);   
+     /* font-weight: bolder; */
+     font-size: 19px;
+}
+.icon_style{
+        display: flex;
+        align-items: center;
+}
+.product_data_price{
+        font-weight: bolder; 
+        position: relative;
+        bottom: 13px;
+}
+.product_data_price>del{
+        font-weight: 500;
+        color: black;
+}
+.product_data_real_price{
+        position: relative;
+        bottom: 24px;
+        font-weight: 700;
+        color: blue;
+}
+.singlePDescription{
+        position: relative;
+        bottom: 24px;
+        width: 70%;
+        line-height: 19px;
+        letter-spacing: 1px;
+        font-size: 18px;
+}
+.product_data_warrantys_details{
+        display: flex;
+        justify-content: space-evenly;
+}
+.product_warranty{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+}
+.product_warranty_icon{
+ font-size: 30px;
+
+}
+.product_data_info span{
+        font-weight: bolder;
+        color: rgb(40, 39, 39);
+}
+.colors{
+        display: flex;
+         /* justify-content: center; */
+         align-items: center;
+}
+
+.btnStyle{
+        width: 4px;
+        margin: 1px;
+        height: 10px;
+        border-radius: 100%;
+        opacity: 0.7;
+}
+.active{
+        opacity: 1;
+}
+.checkcolor{
+       color: rgb(177, 186, 187); 
+       position: relative;
+       bottom: 10px;
+       right: 10px;
+
+}
