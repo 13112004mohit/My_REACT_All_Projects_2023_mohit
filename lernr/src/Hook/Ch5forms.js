@@ -32,39 +32,41 @@ export default function Ch5forms() {
   
 
      
-    const [text,setText] = useState('');
-    const [name,setNname] = useState('');
-    const [btns,setBtns] = useState('click me');
+    const [text,setText] = useState({
+        username:''
+    });
     
 
     const valuechange =(event)=>{
-        console.log(event.target.value);
-        setText(event.target.value)   
+      const {value,name} = event.target;  
+        
+        //   setText((previousdata)=>{
+        //     return{...previousdata,[name]:value}
+        // })
+        setText({ ...text, [name]: value });
     }
     
 
     const chang =() =>{
-        setNname(text);
-        setText(' ')
-        setBtns('i am go 🏃‍♀️ ') 
+        setText('')
     }
   
 
   return (
     <>
         <div style={present}>
-            <h1>Hello {name}</h1>
+            <h1>Hello {text.username}</h1>
              
             <input 
             style={input} 
             placeholder='Enter your name'
             type="text"  
-            value={text}
+            value={text.username}
             onChange={valuechange} 
-            name="text"
+            name='username'
             />
             
-            <button onClick={chang} style={btn}>{btns}</button>
+            <button onClick={chang} style={btn}>click</button>
 
         </div>
     </>

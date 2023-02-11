@@ -3,12 +3,12 @@ import { useGlobalContext } from './UseContext_Hook_Main_2nd'
 
 const Context_Api_Consumer_2nd = () => {
 
-       const data = useGlobalContext();
+       const {name,place,work} = useGlobalContext();
   return (
     <>
           <b>
-                Myname is {data.name} i am from  <br />
-                i am a {data.work}
+          Myname is 😀{name}😀 i am from  {place}<br />
+                i am a {work}
           </b>
     </>
   )

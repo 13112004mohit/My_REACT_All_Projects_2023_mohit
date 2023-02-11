@@ -66,12 +66,7 @@ export default function Ch5forms2() {
     const chang =(event) =>{
         // event.preventDefault(); //form use krne pr enter krne me bhi submit hota hai bina button press kiye
                                   //if when use form then not use preventDefault then show and suddenly remove and refresh page 
-        setText(text.fname);
-        setText(text.pass);
         setText('')
-        // setText.fname('')
-        // setBtns('i am go 🏃‍♀️ ')
-        // alert('subbmited form')
     }
   
  

@@ -18,10 +18,10 @@ import MainContext from "./Context/UseContext_Hook_Main_2nd";
 // import Ch2project from './Hook/ch2project'
 // import Ch3DigClock from './Hook/Ch3DigClock'
 // import Ch4events from './Hook/Ch4events'
-// import Ch5forms from './Hook/Ch5forms'
+import Ch5forms from './Hook/Ch5forms'
 // import Ch5forms2 from './Hook/Ch5forms2'
-// import Ch5formshortcode from './Hook/Ch5formshortcode'
-// import Ch5formshortcode2 from './Hook/Ch5formshortcode2'
+import Ch5formshortcode from './Hook/Ch5formshortcode'
+import Ch5formshortcode2 from './Hook/Ch5formshortcode2'
 // import Ch5formvvvshort from './Hook/Ch5formvvvshort'
 // import Todoapp from './todolist/todo'
 // import Accordino from './AccordionApp/Accordino'
@@ -46,7 +46,7 @@ import MainContext from "./Context/UseContext_Hook_Main_2nd";
   // import ScrollAnimation from './ScrollAnimation/ScrollAnimation'
 // import UseReducer from './Use_ReducerHOOK/Reducer'
 // import Uncontrolledform from './useRef__UnControlled_form/Uncontrolledform'
-import UseLayoutEffect from './useLayoutEffect_Hook/layout_hook'
+// import UseLayoutEffect from './useLayoutEffect_Hook/layout_hook'
 
 
   //  <></>  <--- this is Fragement we can write this things from this other way <ReactFragement><ReactFragement/>
@@ -68,10 +68,10 @@ ReactDOM.render(
        {/* < Ch2project/>   */}
        {/* <Ch3DigClock />   */}
         {/* <Ch4events/> */}
-        {/* <Ch5forms/> */}
+        <Ch5forms/>
         {/* <Ch5forms2/> */}
-        {/* <Ch5formshortcode/> */}
-        {/* <Ch5formshortcode2/> */}
+        <Ch5formshortcode/>
+        <Ch5formshortcode2/>
         {/* <Ch5formvvvshort/> */}
         {/* <Todoapp/> */}
         {/* <Accordino/> */}
@@ -97,7 +97,7 @@ ReactDOM.render(
         {/* <ScrollAnimation/> */}
         {/* <UseReducer/> */}
         {/* <Uncontrolledform/> */}
-        <UseLayoutEffect/>
+        {/* <UseLayoutEffect/> */}
     </MainContext>
   </BrowserRouter>,
   document.getElementById("root")

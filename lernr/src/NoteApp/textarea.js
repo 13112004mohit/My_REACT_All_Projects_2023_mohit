@@ -57,11 +57,12 @@ const Textarea =(props)=>{
                [name]:value, // object of (key:value) pair
             }
         });  //short method of that look below
-
+        setNote({ ...note, [name]: value });
     }
      
     const addEvent = ()=>{
-        props.passNote(note); 
+        // props.passNote(note); 
+        passNote={note} 
         setNote({
             title:"",
             content:"",

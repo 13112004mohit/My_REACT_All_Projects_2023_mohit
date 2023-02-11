@@ -19,7 +19,7 @@ const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } = useProductContext();
 
   // here mere single product ke data ka destructured form aur yha id ka name Sid krdenge aapne convient ke liye
-  const { id: Sid, name, image, company, price, description, category, stock, stars, reviews } = singleProduct;
+  const { id:Sid, name, image, company, price, description, category, stock, stars, reviews } = singleProduct;
 
   useEffect(() => {
     getSingleProduct(`${API}?id=${id}`)
