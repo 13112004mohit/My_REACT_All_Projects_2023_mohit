@@ -2,6 +2,7 @@ import React, { useState, useContext, useRef, useEffect } from 'react';
 import NotesContext from '../context';
 
 export default function AddNote() {
+  
   const { state, dispatch } = useContext(NotesContext);
   const [value, setValue] = useState('');
 
@@ -16,7 +17,7 @@ export default function AddNote() {
   };
 
   const handleSubmit = event => {
-    event.preventDefault();
+    event.preventDefault(); //     preventDefault save krne pr page refresh nhi hota hai 
     if (value.trim() === '') {
       alert('Cannot add a blank note');
     } else {

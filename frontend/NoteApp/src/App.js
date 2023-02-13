@@ -7,7 +7,14 @@ import NotesContext from './context';
 import notesReducer from './reducer';
 
 function App() {
-  const initialState = useContext(NotesContext);
+  // const initialState = useContext(NotesContext);
+  const initialState = {
+    currentNote: null,
+    notes: [
+      { id: 1, text: 'Do homework' },
+      { id: 2, text: 'Take out trash' },
+      { id: 3, text: 'Clean room' }
+    ]}
   const [state, dispatch] = useReducer(notesReducer, initialState);
   return (
     <NotesContext.Provider value={{ state, dispatch }}>

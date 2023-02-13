@@ -9,7 +9,6 @@ const Main =()=>{
     const [addItem,setAddItem] = useState([]);
     
     const addNote = (note) =>{
-        // alert('i am clicked')
         setAddItem((prevData)=>{
             return [...prevData, note];
         });

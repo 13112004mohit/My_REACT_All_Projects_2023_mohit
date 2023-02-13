@@ -20,7 +20,7 @@ const AddToCart = ({product}) => {
   return (
     <>
     <div className='colors'>
-        <p>Colors:
+      Colors:
           {
             colors.map((curColor,index)=>{
               return <button 
@@ -33,17 +33,18 @@ const AddToCart = ({product}) => {
                       </button> 
             })
           }
-        </p>
     </div>
 
-    {/*  add to cart */}
 
+
+    {/*  add to cart */}
 
      <CartAmountToggle 
        amount={amount}
        setDecrease={setDecrease}
        setIncrease={setIncrease}
       />
+
       <NavLink to='/cart'>
         <button className='Addtocart_btn' >Add to Cart</button>
       </NavLink>   

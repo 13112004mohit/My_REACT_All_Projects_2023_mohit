@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaMinus,FaPlus } from 'react-icons/fa'
+import '../style/singleProduct.css'
 
 const CartAmountToggle = ({amount, setDecrease, setIncrease}) => {
         console.log(amount)
@@ -7,9 +8,9 @@ const CartAmountToggle = ({amount, setDecrease, setIncrease}) => {
     <>
     <div className='cart_button'>
       <div className="amount_toggle">
-        <button onClick={()=> setDecrease()} ><FaMinus/></button>
+        <button className='quantityBTN' onClick={()=> setDecrease()} ><FaMinus className='quantityBTNicon'/></button>
         <div className="amount_style">{amount}</div>
-        <button onClick={()=> setIncrease()} ><FaPlus/></button>
+        <button className='quantityBTN' onClick={()=> setIncrease()} ><FaPlus className='quantityBTNicon'/></button>
       </div>
     </div>
     </>

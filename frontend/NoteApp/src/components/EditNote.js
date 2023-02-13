@@ -18,12 +18,13 @@ export default function EditNote() {
   const handleSubmit = event => {
     event.preventDefault();
     if (value.trim() === '') {
-      alert('Cannot add a blank note');
+      alert('Cannot edit a blank note');
     } else {
       dispatch({ type: 'UPDATE_NOTE', payload: value });
       setValue('');
     }
   };
+
 
   return (
     <div className='note-form'>
