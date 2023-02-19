@@ -43,12 +43,13 @@ export default function Ch5forms() {
         //   setText((previousdata)=>{
         //     return{...previousdata,[name]:value}
         // })
-        setText({ ...text, [name]: value });
+        setText({ ...text, [name]:value });
     }
     
 
     const chang =() =>{
         setText('')
+        text.username = ""
     }
   
 
@@ -59,7 +60,7 @@ export default function Ch5forms() {
              
             <input 
             style={input} 
-            placeholder='Enter your name'
+            placeholder='Enter your name__'
             type="text"  
             value={text.username}
             onChange={valuechange} 

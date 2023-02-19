@@ -19,7 +19,7 @@ const SingleProduct = () => {
   const { getSingleProduct, isSingleLoading, singleProduct } = useProductContext();
 
   // here mere single product ke data ka destructured form aur yha id ka name Sid krdenge aapne convient ke liye
-  const { id:Sid, name, image, company, price, description, category, stock, stars, reviews } = singleProduct;
+  const { id: Sid, name, image, company, price, description, category, stock, stars, reviews } = singleProduct;
 
   useEffect(() => {
     getSingleProduct(`${API}?id=${id}`)
@@ -31,7 +31,6 @@ const SingleProduct = () => {
   return (
     <>
       <PageNavigation title={name} />
-      {/* <p>{<FormatPrice price={price} />}</p>   */}
       <div className="singlePgcontainer">
         <div className="grid_two_column">
           {/* Product image */}
@@ -42,7 +41,7 @@ const SingleProduct = () => {
           {/* Product_data */}
           <div className="Product_data">
             <h2>{name}</h2>
-            <Star stars={stars} reviews={reviews}/>
+            <Star stars={stars} reviews={reviews} />
             <p className="product_data_price">
               MRP:<del> <FormatPrice price={price + 250000} /> </del>
             </p>
@@ -74,9 +73,9 @@ const SingleProduct = () => {
               <p>ID : <span>{id}</span></p>
               <p>Brand : <span>{company}</span></p>
             </div>
-              <hr className='breakline' />
- 
-            {stock > 0 && <AddToCart product={singleProduct} /> }
+            <hr className='breakline' />
+
+            {stock > 0 && <AddToCart product={singleProduct} />}
           </div>
         </div>
       </div>

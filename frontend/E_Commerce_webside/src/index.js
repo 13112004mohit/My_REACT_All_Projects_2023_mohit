@@ -5,12 +5,15 @@ import './index.css';
 import App from './App';
 import { AppProvider } from './context/productcontext';
 import FilterContextProvider from './context/filter_context'
+import CartProvider from './context/cart_context';
 
 ReactDOM.render(
   <BrowserRouter>
     <AppProvider>
       <FilterContextProvider>
-        <App />
+        <CartProvider>
+         <App />
+        </CartProvider>
       </FilterContextProvider>
     </AppProvider>
   </BrowserRouter>

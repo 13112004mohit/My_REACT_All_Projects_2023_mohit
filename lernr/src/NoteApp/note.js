@@ -7,7 +7,7 @@ const Note = (props)=>{
    }
     return(
      <>
-       
+         
        <div className="notemain">
            <h3>{props.title}</h3>
            <p>{props.content}</p>

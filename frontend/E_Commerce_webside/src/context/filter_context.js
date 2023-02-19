@@ -8,11 +8,17 @@ const initialState = {
         filter_products: [],
         all_products: [],
         product_View:true,
-        sorting_value:"lowest",
+        // sorting_value:"lowest",
+        sorting_value:null,
         filters:{
                 text:"",
-                category:"all",
-                company:"all",
+                category:"All",
+                company:"All",
+                colors :"All",
+                maxPrice:0,
+                price:0,
+                minPrice:0,
+                
         }
 }
 
@@ -47,6 +53,12 @@ const FilterContextProvider = ({ children }) => {
                return dispatch({type:"UPDATE_FILTER_VALUE",payload:{name,value}})
         }
 
+
+        // Clear filters
+        const clearFilter=()=>{
+                dispatch({type:"CLEAR_FILTERS"})
+        }
+
         //  short the product
         useEffect(()=>{
                 dispatch({type:"FILTER_PRODUCTS"});
@@ -59,7 +71,7 @@ const FilterContextProvider = ({ children }) => {
         }, [products])
 
 
-        return <FilterContext.Provider value={{ ...state ,setGridView,setListView,sorting,updateFilterValue}}>
+        return <FilterContext.Provider value={{ ...state ,setGridView,setListView,sorting,updateFilterValue, clearFilter}}>
                 {children}
         </FilterContext.Provider>
 }

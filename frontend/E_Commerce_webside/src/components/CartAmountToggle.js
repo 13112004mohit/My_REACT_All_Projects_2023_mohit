@@ -3,7 +3,7 @@ import { FaMinus,FaPlus } from 'react-icons/fa'
 import '../style/singleProduct.css'
 
 const CartAmountToggle = ({amount, setDecrease, setIncrease}) => {
-        console.log(amount)
+        // console.log(amount)
   return (
     <>
     <div className='cart_button'>

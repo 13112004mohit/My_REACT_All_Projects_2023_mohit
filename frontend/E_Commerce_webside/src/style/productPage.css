@@ -11,16 +11,8 @@
 
 
 
-.first_filter_container{
-       width: 20vw;
-        min-height: 100vh;
-        height: 130vh;
-        border: 2px solid blue;
-}
 
-.sort_filter{
-        border: 2px solid blue;
-}
+
 
 .second_product_container{
         width: 60vw;
@@ -131,4 +123,118 @@
 .shortselected:focus{
         
         border: 2px solid rgb(17, 14, 30);
+}
+
+
+/* Filter seciton  */
+
+
+.first_filter_container{
+        width: 20vw;
+        min-height: 100vh;
+        height: 130vh;
+        border: 2px solid rgba(226, 226, 228, 0.847);
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+}
+
+.filter_search{
+        width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.search_items_product{
+        padding: 4px 0;
+        margin: 10px 0;
+        border: 3px solid rgb(182, 178, 178);
+}
+.search_items_product:focus{
+        outline: none;
+}
+/* category */
+.filter_category_field{
+        width: 10vw;
+        margin-bottom: 2rem;
+        margin-left: 10px;
+}
+
+.filter_category_data{
+       display: flex;
+       flex-direction: column;
+}
+
+.product_caterory_button{
+   background-color: #ffffff00;
+   text-align: start;
+   color: rgba(73, 70, 70, 0.918);
+   font-size: 17px;
+   font-weight: 500;
+}
+.active_category{
+        text-decoration: underline;
+        color: rgb(12, 8, 28);
+}
+/* comany */
+.filter_company{
+      margin: 0 0 2rem 10px;  
+}
+.filter_company_data{
+        border: 2px solid rgb(159, 154, 154);
+        padding: 5px 10px;
+}
+.filter_company_data:focus{
+        border: 2px solid rgb(52, 36, 120);
+        padding: 5px 10px;
+}
+
+/* colors */
+.filter_colors{
+    margin-left: 10px;    
+}
+
+/* price */
+.filter_price{
+        margin: 10px;
+}
+.product_range{
+   height: 5px;
+   -webkit-appearance: none;
+   opacity: 0.8;
+    background-color: #9893c5;
+    border-radius: 10px;
+}
+.product_range::-webkit-slider-thumb {     
+        width: 20px;
+        height: 20px;
+        border-radius:50%;
+        border: 1px solid black;
+        cursor: pointer;
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsi596rR_b2WL2CpnlZoXAMwVga0KQg6Xctg&usqp=CAU');
+        background-position: center;
+        background-size: cover;
+        appearance: none;
+}
+.product_range:hover {
+        opacity: 1;
+      }
+
+      /* filter clear */
+.filter_clear{
+  margin-left: 10px;
+}
+
+.filter_clear_button{
+        width: 15px 2rem;
+        background-color: #21105f;
+        font-weight: normal;
+        font-family: serif;
+        border: 2px solid #21105f;
+        transition: .8s ease;
+}
+.filter_clear_button:hover{
+        background-color: #ffffff;
+        color: #21105f;
+        border: 2px solid #21105f;
 }

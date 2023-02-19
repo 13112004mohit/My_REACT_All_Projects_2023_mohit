@@ -84,7 +84,7 @@ body{
     justify-content: space-between;
     padding: 20px 80px;
     background: #e3e6f3;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 10px rgba(91, 88, 88, 0.342);
     z-index: 999;
     position: sticky;
     top: 0;
@@ -132,7 +132,16 @@ body{
     align-items: center;
 }
 
-
+.cart_tollge_amount{
+    position: relative;
+    bottom: 1rem;
+    right:9px;
+    background-color: #ffffffc3;
+    border-radius:50px;
+    border: 1px solid rgb(203, 200, 200);
+    padding: 2px;
+    text-align: center;
+}
 
 /* Mobile Responsiveness ################ */
 /* @mediaQueries  for tablet and smartphone */
@@ -181,7 +190,6 @@ body{
         color: #222;
         font-size: 24px;
     }
-    #lg-bag{
-        display: none;
-    }
+
+ 
     }

@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import '../style/NavCss.css';
-// import Footer from './Footer'
+import { useCartContext } from '../context/cart_context';
 
 const Navbar = () => {
 
-  // const [] = useState();
+  const {total_amount} = useCartContext();
 
   
   const menu=()=>{
@@ -30,13 +30,20 @@ const Navbar = () => {
       <li><NavLink to={'/product'} >Product</NavLink>   </li>
       {/* <li><NavLink to={'/singleproduct/:id'} >SingleProduct</NavLink>  </li> */}
       <li><NavLink to={'/login'} ><button>Login</button></NavLink>  </li>
-      <li id="lg-bag"><NavLink to={'/cart'}><img  style={{width:'25px'}} src="https://cdn-icons-png.flaticon.com/128/7606/7606186.png" alt="cart" /></NavLink></li>
+
+      <li>
+        <NavLink to={'/cart'}>
+           <img  style={{width:'25px'}} src="https://cdn-icons-png.flaticon.com/128/7606/7606186.png" alt="cart" />
+           <span className='cart_tollge_amount'>{total_amount}</span>
+        </NavLink>
+      </li>
+
           <i onClick={menuclose} id="close" className="fa-solid fa-x" />
       </ul>
+
         </div>
         <div id="mobile">
-            <NavLink to={'/cart'}><img  style={{width:'25px'}} src="https://cdn-icons-png.flaticon.com/128/7606/7606186.png" alt="cart" /></NavLink>
-             <i onClick={menu} id="bar" className="fas fa-outdent" />
+          <i onClick={menu} id="bar" className="fas fa-outdent" />
         </div>
       </section>
 

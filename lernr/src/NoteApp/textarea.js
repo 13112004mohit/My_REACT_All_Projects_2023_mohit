@@ -61,7 +61,6 @@ const Textarea =(props)=>{
     }
      
     const addEvent = ()=>{
-        // props.passNote(note); 
         passNote={note} 
         setNote({
             title:"",
