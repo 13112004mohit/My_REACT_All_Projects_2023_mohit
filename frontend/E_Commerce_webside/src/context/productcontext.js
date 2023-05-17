@@ -20,11 +20,12 @@ const AppProvider =({children})=>{
      
         // here total data and feature product
     const getProducts = async(url)=>{
-      dispatch({type:"SET_LOADING"})
+
+          dispatch({type:"SET_LOADING"})  
         try{
-       const res = await axios.get(url);  
-       const products = await res.data;
-       dispatch({type:"SET_API_DATA",payload:products })
+          const res = await axios.get(url);
+          const products = await res.data;
+          dispatch({type:"SET_API_DATA",payload:products })
         }
         catch(error){
                 dispatch({type:"API_ERROR"})
@@ -47,6 +48,7 @@ const AppProvider =({children})=>{
  useEffect(()=>{
    getProducts(API);
  },[]);
+
     return(
         <AppContext.Provider  value={{...state, getSingleProduct }}>
             {children}

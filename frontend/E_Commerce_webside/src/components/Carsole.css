@@ -1,0 +1,71 @@
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next{
+        background-color: #7d8fa46f;  
+        width: 57px ;
+        height: 55px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9;
+        display: none;
+}
+.carsole_first_con:hover 
+.slick-arrow.slick-prev{
+        display: inline-block;
+}
+.carsole_first_con:hover 
+.slick-arrow.slick-next{
+        display: inline-block;
+}
+
+.slick-next::before,
+.slick-prev::before{
+        display: none;
+}
+.slick-prev{
+left: 1rem;
+}
+.slick-next{
+ right: 1rem;
+}
+.carsole_arrow{
+      color: #9eb1c4;  
+      font-size: 3rem;
+      margin-left: 5px;
+      margin-top: 2px;
+}
+.carsole_arrow:hover{
+      color: #1abb9c;  
+      font-size: 3rem;
+}
+.custom-indicator {
+        width: 9rem;
+        position: absolute;
+        bottom: 0%;
+        left: 45%;
+        background-color: #ffffff;
+        border-radius: 5px 5px 0 0;
+        transition: .5s;
+}
+
+.custom-indicator li{
+        width: 15px;
+        height: 15px;
+        background-color: #506a85;
+        color: rgba(0, 255, 255, 0);
+        margin-top: .4rem;
+        border-radius: 50%;
+        display: none;
+}
+
+.carsole_first_con:hover .custom-indicator li{
+             display: inline-block;
+}
+.custom-indicator li.slick-active{
+        width: 15px;
+        height: 15px;
+        background-color: #1abb9c;
+        color: rgba(0, 255, 255, 0);
+        border-radius: 50%;
+}

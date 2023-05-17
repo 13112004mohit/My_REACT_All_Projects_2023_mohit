@@ -1,0 +1,105 @@
+/* button */
+.animated-button {
+        background-color: #ffffff;
+        border: 2px solid #1abb9c;
+        color:  #1abb9c;
+        font-family: 'Lato', sans-serif;
+        letter-spacing: 1px;
+        padding: 5px 19px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        
+      }
+      
+      .animated-button:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(266deg, #1abb9c, #80f28bbd);
+        transition: all 0.3s ease-out;
+      }
+      
+      .animated-button:hover:before {
+        left: 0;
+      }
+      
+      .animated-button span {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        transition: all 0.3s ease-out;
+      }
+      
+      .animated-button:hover span {
+        color: #ffffff;
+        transform: translateX(10px);
+      }
+      
+    
+
+      @media(max-width:554px){
+        /* button */
+.animated-button {
+        padding: 4px 19px;
+        font-size: 15px;
+        margin: 4px 2px;
+      }
+      }
+
+
+
+  
+      
+/* crasole2 crasole2 crasole2  crasole2 crasole2 crasole2 crasole2    */
+      .image-box2 {
+        position: relative;
+        overflow: hidden;
+      }
+      
+      
+      .image-box2:hover  #img2{
+        transform: scale(1.2);
+      }
+      
+      
+      
+      .overlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(25, 70, 204, 0.686);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+      
+      .overlay2 p {
+        color: #fff;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: .5px;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+      }
+      
+      .image-box2:hover .overlay2 {
+        opacity: 1;
+      }
+      

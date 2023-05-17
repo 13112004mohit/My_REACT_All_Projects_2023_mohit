@@ -9,6 +9,7 @@ import { MdSecurity, MdOutlineDeliveryDining } from 'react-icons/md'
 import Star from '../components/Star'
 import AddToCart from '../components/AddToCart'
 import '../style/singleProduct.css'
+import { PropagateLoader } from 'react-spinners';
 
 
 const API = 'https://api.pujakaitem.com/api/products';
@@ -26,7 +27,7 @@ const SingleProduct = () => {
   }, []);
 
   if (isSingleLoading) {
-    return <div>Loading....</div>
+    return  <div className='loader_page'><PropagateLoader color='cyan'/></div>
   }
   return (
     <>

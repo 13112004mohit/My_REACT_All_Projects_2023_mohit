@@ -26,7 +26,7 @@ const Paramh =()=>{
         aise dekhne ko milta hai aur jbb hmm page1 pr bina kisi return button click kre jana chaahre hai to 
         hmm only /page2/moveinae ko link(url) pr se delet krte hi direct page1 pr clejate hai to aise me hmm wha bhi 
         params hook ka use krdkte hai
-        abb aap chiche hi example ka use kr skte hai jiske pass primium hai wo awesom movei dekhega aur jiske paa
+        abb aap chiche hi example ka use kr skte hai jiske pass primium hai wo awesom movei dekhega aur jiske paas
         nhihai wo nhi dekh payega agar aap ismeka ka 2nddefname likte hai to aapke pass subscription hai
          aur agar 2nddefname ke place pr other password likte hai to aapkepass 
          subscription nhi hai-->/params/defaultName/2nddefname */}

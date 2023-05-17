@@ -8,7 +8,7 @@ const Product = (curElem) => {
   return (
     <>
      <div className="product_outer_container">
-          <NavLink to={`/singleproduct/${id}`} >
+          <NavLink  onClick={()=>{ window.scrollTo({top:0 ,left:0 ,behavior:'auto'})}} to={`/singleproduct/${id}`} >
                <figure className='product_image_container'>
                   <img className='product_image' src={image} alt={name} />
                   <figcaption className='caption'>{category}</figcaption>

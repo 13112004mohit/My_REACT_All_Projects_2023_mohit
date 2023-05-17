@@ -1,0 +1,22 @@
+.one_col__checkout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+}
+
+
+.first_con_img{
+        width: 18rem;
+        height: 18rem;
+}
+.first_con_img>img{
+        width: 100%;
+        height: 100%;
+}
+
+
+.one_col__checkout>h1{
+
+}

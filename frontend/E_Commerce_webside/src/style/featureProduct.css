@@ -1,5 +1,5 @@
 .featureProduct_main_container{
-        width: 100vw;
+        width: 100%;
         height: 70vh;
         display: flex;
         justify-content: center;
@@ -14,11 +14,17 @@
 }
 .intro_data{
         color: rgb(94, 93, 91);
+        font-weight: 500;
+        font-size:20px;
+        position: relative;
+        left: 4.5rem;
 }
 .common_heading{
-        color: rgb(0, 0, 0);
+        color: rgb(35 35 35);
         font-weight: 700;
-        font-size: 30px;
+        font-size: 50px;
+        position: relative;
+        left: 4.5rem;
 }
 .grid_three_column{
         width: 80vw;

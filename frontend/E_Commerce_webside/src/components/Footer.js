@@ -28,9 +28,9 @@ const Footer = () => {
             <div className="foobox">
                 <p>follow us</p>
                  <div className="foobox-icon">
-                     <i class="fa-brands fa-facebook"></i>
-                     <i class="fa-brands fa-instagram"></i>
-                     <i class="fa-brands fa-youtube"></i>
+                    <a target='_blank' href="/"><i class="fa-brands fa-facebook"></i></a>
+                    <a target='_blank' href="/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a target='_blank' href="/"> <i class="fa-brands fa-youtube"></i></a>
                  </div>
             </div>
 

@@ -2,12 +2,13 @@ import React from 'react'
 import { useProductContext } from '../context/productcontext';
 import Product from './Product';
 import '../style/featureProduct.css'
+import { BounceLoader } from 'react-spinners';
 
 const FeatureProduct = () => {
         const {isLoading ,featureProducts} = useProductContext();
         
         if(isLoading){
-           return <div>.....Loading</div>
+           return <div className='loader_page'><BounceLoader color='blue'/></div>
         }
   return (
 

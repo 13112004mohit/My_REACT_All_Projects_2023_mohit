@@ -1,8 +1,10 @@
 import React from 'react'
+import Carsole1 from '../components/crasole'
 import FeatureProduct from '../components/FeatureProduct';
 import Hero from '../components/herosection';
 import Services from '../components/services';
 import Truested from '../components/Truested';
+
 
 const herodata = {
      heading:'Our Store',
@@ -10,11 +12,13 @@ const herodata = {
      content:'A shopping centre is a collection of independent retail stores, services, and a parking area conceived,retail stores, services, and a parking area conceived, constructed, and maintained by a',
      button:'Shop Now',
 }
+
 const {heading,image,content,button} = herodata;
 
 const Home = () => {
   return (
     <>
+          <Carsole1/>
           <Hero heading={heading} image={image}  content={content}   btn={button} />    
           <FeatureProduct />
           <Services/>

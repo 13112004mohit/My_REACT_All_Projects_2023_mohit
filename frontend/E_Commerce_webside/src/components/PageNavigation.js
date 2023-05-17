@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const PageNavigation = ({title}) => {
   return (
     <>
-     <p> <NavLink to='/'>Home</NavLink>/{title}</p>
+     <p> <NavLink  onClick={()=>{ window.scrollTo({top:0 ,left:0 ,behavior:'auto'})}} to='/'>Home</NavLink>/{title}</p>
     </>
   )
 }

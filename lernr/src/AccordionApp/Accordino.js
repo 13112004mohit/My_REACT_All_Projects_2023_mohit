@@ -12,7 +12,7 @@ const Accordino =()=>{
         <h1>Question & Answer</h1>
         {
                                        // data.map((curElem) =>{
-            Apidata.map((curElem,index) =>{
+            Apidata.map((curElem,index) =>{  
                 const {id} = curElem;
                 return <MyAccordion key={id} {...curElem} />            
                 // hmm props me destructuring kiye hai to yha se sperad operator ka use krke sidhe key:value send krde rhe hai

@@ -1,10 +1,8 @@
 import React,{useState} from 'react';
+import Note from './note';
+import './note.css'
 
-const main={
-    display:'flex',
-    flexDirection:'column',
-    padding:'1% 20%'
-}
+
 const heading={
     width:'100%',
     height:'30px',
@@ -39,13 +37,13 @@ const pluse={
     width:'25px',
     height:'25px',
 }
-const Textarea =(props)=>{
+const Textarea =({cart,setCart})=>{
 
     const [note,setNote] = useState({
-        title:"",
+        title:"",  
         content:"",
     });
-   
+    
     // ye onChange data ko value me derha hai setNote ka use krke
     const InputEvent = (event)=>{
         // const value = event.target.value;
@@ -53,7 +51,7 @@ const Textarea =(props)=>{
         const {name,value} = event.target;  // destructuring
         setNote((prevData) =>{
             return {
-                ...prevData,   //spread operator for object
+                ...prevData,   //spread operator for object 
                [name]:value, // object of (key:value) pair
             }
         });  //short method of that look below
@@ -61,17 +59,14 @@ const Textarea =(props)=>{
     }
      
     const addEvent = ()=>{
-        passNote={note} 
-        setNote({
-            title:"",
-            content:"",
-        });
+        setCart([...cart,note])
+        setNote({ title:'',content:'' })  
     }; 
 
     return(
-        // phele jbb bhi hmm textarea me ya input field me jobhi likhte hai phele wo onChange me jata hai tb suddenly onChange puradata value me assign kr deta hai
+        // phele jbb bhi hmm textarea me ya input field me jobhi likhte hai phele wo onChange me     jata hai tb suddenly onChange puradata value me assign kr deta hai
      <>
-     <div style={main}>
+     <div className='maintextarea'>
        <textarea  name='title'   style={heading}   cols="30" rows="10" value={note.title} 
            onChange={InputEvent} 
            placeholder='Heading'/>
@@ -81,8 +76,16 @@ const Textarea =(props)=>{
 
        <button onClick={addEvent} style={btn}> <img style={pluse} src="https://cdn-icons-png.flaticon.com/128/2377/2377877.png" alt="" /> </button>
      </div>
+
+     <div id='main'>
+            <div id="maincontent">
+      {  cart.map((val,index) => {
+           return <Note key={index} id={index} {...val} cart={cart} setCart={setCart}  />
+             })}
+    </div>
+          </div>
      </>
     );
 }
-
+// deletItem ={onDelete}
 export default Textarea;

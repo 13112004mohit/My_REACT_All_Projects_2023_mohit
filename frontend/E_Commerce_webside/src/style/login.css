@@ -1,0 +1,59 @@
+.login_main_pg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 8rem 0;
+}
+.one_col_{
+        width: 26rem;
+        height: 27rem;
+        border: 1px solid #15c09e;
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        border-radius: 1rem;
+
+}
+.img_box_login{
+
+}
+.form_{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+}
+#form_boxs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+}
+
+.loginname{
+        width: 17rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        border: 2px solid #37b49c;
+        color: #6d6c6c;
+        font-size: 1.1rem;
+}
+.loginpassword{
+        width: 17rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+        border: 2px solid #37b49c;
+        color: #6d6c6c;
+        font-size: 1.1rem;
+}
+.smallbox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 17rem;
+}
+.smallbox>p{
+        color: #ff3600;
+}

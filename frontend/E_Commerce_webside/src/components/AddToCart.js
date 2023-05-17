@@ -48,9 +48,9 @@ const AddToCart = ({product}) => {
       />
 
       <NavLink to='/cart'
-               onClick={()=> addToCart(id,color,amount,product)}
+               onClick={()=> addToCart(id,color,amount,product) }
         >
-        <button className='Addtocart_btn' >Add to Cart</button>
+        <button  onClick={()=>{ window.scrollTo({top:0 ,left:0 ,behavior:'auto'})}} className='Addtocart_btn' >Add to Cart</button>
       </NavLink>   
 
    </>

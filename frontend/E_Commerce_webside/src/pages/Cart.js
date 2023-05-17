@@ -66,7 +66,9 @@ const Card = () => {
                    <FormatPrice price={(total_price>=500)? (total_price+shipping_fee) : (total_price ) }/>
                  </span> 
               </p>
-              <button className="cart_continue_shopping">Order check out</button>
+              <NavLink onClick={()=>{ window.scrollTo({top:0 ,left:0 ,behavior:'auto'})}} to={'checkout'}>
+                 <button  className="cart_continue_shopping">Order check out</button>
+              </NavLink>
           </div>
 
 
