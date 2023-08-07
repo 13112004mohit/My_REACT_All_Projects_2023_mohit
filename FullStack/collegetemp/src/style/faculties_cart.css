@@ -1,0 +1,139 @@
+
+
+.swiper-slide{
+        width: 22rem;
+        height: 25rem;
+}
+section .card .image{
+        height: 12rem;
+        width: 12rem;
+        border-radius: 50%;
+        padding: 3px;
+        background-color: #125875;
+    }
+    
+    section .card .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        
+    }
+    .card{
+        background-color: rgb(255, 255, 255);
+        border-radius: .3rem;
+        position: relative;
+        box-shadow: 0px 0px 15px 3px #504f4f7b;
+    }
+    
+    .card::before{
+        content: "";
+        position: absolute;
+        height: 40%;
+        width: 100%;
+        background-color: #125875;
+        border-radius: .3rem .3rem 0 0;
+    } 
+    
+    .card .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        position: relative;
+        z-index: 100;
+    }
+    
+    .card .media-icons{
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    .card .media-icons>a{
+        font-size: 1.2rem;
+    }
+    
+    #faculti_socal_icon{
+        color: #ffffff;
+        opacity: 0.6;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    #faculti_socal_icon:hover{
+        opacity: 1;
+    }
+    .card .name-profession{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        color: rgba(51, 51, 51, 0.877);
+    }
+    
+    .name-profession .name{
+       font-size: 1.5rem;
+       font-family: 'Roboto';
+       letter-spacing: .5px;
+
+       font-weight: 600;
+    }
+    
+    .name-profession .profession,
+     .degree{
+       font-size: 1rem;
+       font-family: 'Lato';
+       font-weight: 500;
+    }
+    
+ 
+    
+    .card .button{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    
+    .card .button button{
+        background-color:#125875;
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 8px 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-family: 'Lato';
+        letter-spacing: .5px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .button button:hover{
+        background-color: #f45d1d;
+    }
+    
+  
+    
+    @media(max-width:455px){
+        
+
+section .card .image{
+        height: 11rem;
+        width: 11rem;
+    }
+    
+
+    
+    .name-profession .name{
+       font-size: 1.2rem;
+    }
+    
+    
+    }

@@ -1,0 +1,140 @@
+/* UR NEXT of CSS */
+.bgccolor{
+        background: linear-gradient(77deg, #001419d9,#001419c0, transparent);
+        width: 100%;
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+
+}
+.urnext_{
+       
+        width: 100%;
+        height: 15rem;
+        background-image: url('../assets/crasole1.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 100% 20%;
+        margin: 10rem 0 8rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+}
+.urnext_F_con{
+        width: 50rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+}
+.urnext_F_con>h1{
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+        font-family: 'Lato', sans-serif;
+        font-weight: bolder;
+        color: #ffffff;
+        text-shadow: 0px 1px 8px #2e2e30;
+        text-transform: uppercase;
+        margin: 0 0 -1rem 0;
+        text-align: flex-start;
+}
+.urnext_F_con>p{
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        color: #fa5228;
+        text-transform: capitalize;
+        position: relative;
+        top: 0.9rem;
+        display: flex;
+        text-align: flex-start;
+}
+#noteicon{
+        position: relative;
+        top: .5rem;
+        margin-right: .5rem;
+        color: white;
+}
+.urnext_2_con{
+        width: 25rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+
+@media(max-width:1244px){
+        
+     /* UR NEXT of CSS */
+     .bgccolor{
+        background: linear-gradient(77deg, #001419d9,#001419c0, transparent);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 0;
+
+}
+.urnext_{
+       
+        width: 100%;
+        height: auto;
+        margin: 0 0 4rem 0;
+        flex-direction: column;
+        gap: 0rem;
+}
+.urnext_F_con{
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+.urnext_F_con>h1{
+        font-size: 2rem;
+        margin: 0 0 -1rem 0;
+}
+.urnext_2_con{
+        width: auto;
+        height: 100%;
+align-items: flex-start;
+}
+
+   
+}
+
+@media(max-width:554px){
+            /* UR NEXT */
+       
+        .urnext_F_con{
+                width: 98%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+        }
+        .urnext_F_con>h1{
+                font-size: 1.6rem;
+                text-align: center;
+        }
+
+        .urnext_F_con>p{
+             font-family: 'Lato', sans-serif;
+             font-weight: 500;
+             font-size: 1rem;
+             text-align: center;
+        }
+        
+}

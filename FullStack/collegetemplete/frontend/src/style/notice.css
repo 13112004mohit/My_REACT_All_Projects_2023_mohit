@@ -1,0 +1,128 @@
+.notice_m_con{
+   
+        height: 20rem;
+        background-image: url('https://images.pexels.com/photos/7319300/pexels-photo-7319300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+}
+
+.notice_F_con{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #00051b9d;
+}
+
+.notice_F_con>h1{
+        color: white;
+        font-weight: 500;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+}
+.notice_F_con>p{
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+}
+.notice_F_con>p>a{
+        color: #f9521a;
+        text-decoration: none;
+        margin: 0 0rem 0 0;
+        transition: .5s ;
+        font-family: 'Open Sans', sans-serif;
+}
+.notice_F_con>p>a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+        margin: 0 0rem 0 0;
+} 
+
+
+
+/* content of contact page */
+.notice_S_con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 8rem 0;
+}
+ .notice_Cart_con{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 4rem 1rem;
+    justify-items: center;
+ }
+
+
+
+
+ 
+@media(max-width:1264px){
+        .notice_m_con{
+                height: 20rem;}
+        .notice_F_con>h1{
+                color: white;
+                font-weight: 500;
+                font-size: 4rem;
+        }
+        .notice_F_con>p{
+                font-size: 1.2rem;
+        }
+        .notice_Cart_con{
+                width: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 4rem 1rem;
+            justify-items: center;
+         }
+
+}
+
+
+
+@media(max-width:714px){
+        .notice_Cart_con{
+            grid-template-columns: repeat(1,1fr);
+            gap: 2rem 0rem;
+         }
+}
+@media(max-width:554px){
+        .notice_m_con{
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+        }
+        .notice_m_con{
+                height: 15rem;}
+        .notice_F_con>h1{
+                color: white;
+                font-weight: 500;
+                font-size: 3rem;
+        }
+        .notice_F_con>p{
+                font-size: 1.1rem;
+        }
+     
+
+        
+}
+
+@media(max-width:394px){
+        .notice_m_con{
+                height: 15rem;
+        }
+        .notice_F_con{
+                width: 100%;
+                height: 15rem;
+          }
+}

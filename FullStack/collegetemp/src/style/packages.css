@@ -1,0 +1,289 @@
+
+.packages_m_con{
+        height: 30rem;
+        background-image: url('../assets/10.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 100% 100%;
+}
+.packagespg_F_con{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding: 3rem;
+        background-color: #00051bb3;
+}
+
+.packagespg_F_con>h1{
+        color: white;
+        font-weight: 500;
+        font-size: 6rem;
+        text-align: center;
+        font-family: 'Lato';
+        margin: 0;
+}
+.packagespg_F_con>p{
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Roboto';
+}
+.packagespg_F_con>p>a{
+        color: #f9601a;
+        text-decoration: none;
+        margin: 0 0rem 0 0;
+        transition: .5s ;
+        font-family: 'Roboto';
+}
+.packagespg_F_con>p>a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+        margin: 0 0rem 0 0;
+} 
+
+
+
+ 
+/* carts of packages */
+ .packages__m_con{
+        margin: 3rem 0 3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        gap: 2rem;
+}
+
+.p_m_box{
+        width: 73rem;
+        height: 20rem;
+        border-radius: .1rem;
+        overflow: hidden;
+        border: 1px solid #e2e3e2;
+        display: flex;
+}
+.p_F_box_con{
+      width: 28rem;
+      height: 20rem;
+}
+.p_F_box_con>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+.p_S_box_con{
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+} 
+.P_S_h1{
+        font-size: 1.6rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bolder;
+        color: #5a5555;
+        text-transform: uppercase;
+        margin: 0 0 1rem 0;
+}
+.P_S_p1{
+        word-spacing: 2px;
+        font-size: 1.04rem;
+        font-weight: 500;
+        color: #888787;
+        font-family: 'Lato', sans-serif;
+}
+.P_S_data{
+        position: relative;
+        bottom: -17%;
+}
+.P_S_data>p{
+        font-size: 1rem;
+        font-family: 'Lato', sans-serif;
+        color: #5a5555;
+}
+
+
+
+
+.p_T_box_con{
+        width: 15rem;
+        border: 1px solid #d5d8d6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+.p_T_price{
+        font-size: 1.6rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color: #5a5555;
+        text-transform: uppercase;
+        margin: 0 0 1rem 0;
+        position: relative;
+}
+.prson{
+        position: absolute;
+        font-family: 'Lato', sans-serif;
+        top: 1.7rem;
+        left: 15%;
+        font-weight: 100;
+        font-size: .85rem;
+        color: #afaeae;
+        margin: 0 0 0 0;
+        text-transform: uppercase;
+}
+
+
+
+@media(max-width:1244px){
+        .packages_m_con{
+                height: 20rem;}
+        .packagespg_F_con>h1{
+                color: white;
+                font-weight: 500;
+                font-size: 4rem;
+        }
+        .packagespg_F_con>p{
+                font-size: 1.2rem;
+        }
+/* carts of packages */
+ .packages__m_con{
+        margin: 6rem 0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.p_m_box{
+        width: 35rem;
+        height: auto;
+        overflow: hidden;
+        border-radius: .2rem;
+        border: 1px solid #d5d8d6;
+        display: flex;
+        flex-direction: column;
+
+}
+.p_F_box_con{
+      width: 35rem;
+      height: 20rem;
+}
+.p_S_box_con{
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+} 
+.P_S_h1{
+        font-size: 1.6rem;
+        font-weight: bolder;
+        margin: 0 0 1rem 0;
+}
+.P_S_p1{
+        word-spacing: 2px;
+        font-weight: 500;
+        color: #888787;
+}
+.P_S_data{
+   margin-top: 1rem;
+}
+.P_S_data>p{
+        font-size: 1rem;
+}
+
+
+
+
+.p_T_box_con{
+        width: 35rem;
+        border: 1px solid #d5d8d6;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+}
+
+.p_T_price{
+        font-size: 1.6rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 900;
+        color: #5a5555;
+        text-transform: uppercase;
+        margin: 0 0 .5rem 0;
+        position: relative;
+}
+}
+
+
+
+@media(max-width:554px){
+        .packagespg_F_con{
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+        }
+        .packages_m_con{
+                height: 15rem;}
+        .packagespg_F_con>h1{
+                color: white;
+                font-weight: 500;
+                font-size: 3rem;
+        }
+        .packagespg_F_con>p{
+                font-size: 1.1rem;
+        }
+     
+/* carts of packages */
+
+
+.p_m_box{
+        width: 95%;
+        height: auto;
+
+}
+.p_F_box_con{
+      width: 100%;
+      height: 20rem;
+}
+.p_S_box_con{
+        width: 100%;
+} 
+.P_S_h1{
+        font-size: 1.6rem;
+}
+.P_S_p1{
+        word-spacing: 2px;
+        font-size: 1.1rem;
+}
+
+
+
+.p_T_box_con{
+        width: 100%;
+}
+
+        
+}
+
+@media(max-width:394px){
+        .packages_m_con{
+                height: 15rem;
+        }
+        .p_F_box_con{
+                width: 100%;
+                height: 15rem;
+          }
+}
+@media(max-width:270px){
+     
+      
+.p_T_box_con{
+        flex-direction: column;
+}
+}

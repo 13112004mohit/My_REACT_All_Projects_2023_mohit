@@ -1,0 +1,95 @@
+.gallery_component_m_con{
+        margin: 8rem 0 10rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+}
+.galler7_component_F_con{
+        width: 83.2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 2rem;
+}
+#gallery_compo_h1{
+        word-spacing: 2px;
+        font-size: 3rem;
+        line-height: 3.4rem;
+        margin: 1.1rem 0;
+        font-weight: 500;
+        color: #424242;
+        font-family: 'Roboto';
+}
+#gallery_compo_p{
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        color: #fe612d;
+        position:relative;
+        top: -1rem;
+}
+.gallery_component_m_con>a{
+        position: relative;
+        top: 3rem;
+}
+#forward_icon{
+        position: relative;
+        top: 2px;
+        margin-left: .5rem;
+        font-size: 1.3rem;
+}
+#gallery_m_con{
+   width: 84.2rem;
+}
+#zoomin{
+        cursor: zoom-in;
+        border-radius: .3rem;
+}
+#zoomout{
+        cursor: zoom-out;
+}
+@media(max-width:1365px){
+        #gallery_m_con{
+                width: 41.2rem;
+             } 
+             .galler7_component_F_con{
+                width:72%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+        }
+}
+@media(max-width:674px){
+
+        .gallery_component_m_con{
+                margin: 4rem 0 4rem 0;
+        }
+
+        #gallery_m_con{
+                width:90%;
+             } 
+             .galler7_component_F_con{
+                width:90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+        }
+        #gallery_compo_h1{
+                font-size: 1.6rem;
+        }
+        #gallery_compo_p{
+                font-size: 1rem;
+                top: -2rem;
+                text-align: center;
+        }
+     
+}
