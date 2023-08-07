@@ -102,7 +102,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content:start;
+        justify-content:flex-start;
         border-radius: 0.4rem;
         margin: .5rem 0;
 }

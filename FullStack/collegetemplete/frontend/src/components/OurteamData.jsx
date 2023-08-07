@@ -4,8 +4,6 @@ import img1  from '../assets/team1.jpg'
 import img2  from '../assets/team2.jpg'
 import img3  from '../assets/team3.jpg'
 import img4  from '../assets/team4.jpg'
-import img5  from '../assets/team5.png'
-import img6  from '../assets/team6.png'
 
 const CartData=[
 

@@ -11,6 +11,7 @@ const teamCart = (props) => {
               <img
                 className="img-fluid"
                 src={props.image}
+                alt="img"
               />
             </div>
             <div className="team-content">

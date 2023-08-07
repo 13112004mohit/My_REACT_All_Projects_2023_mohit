@@ -1,7 +1,6 @@
 import React from 'react'
 import '../style/Courses_cart.css';
 import '../style/animatedbutton.css'
-import {IoIosArrowForward} from 'react-icons/io'
 import { NavLink } from 'react-router-dom';
 
 const Courses_Cart = (props) => {

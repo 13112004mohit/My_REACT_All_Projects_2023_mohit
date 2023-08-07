@@ -5,7 +5,6 @@ import '../style/home_1.css'
 import '../style/animatedbutton.css'
 import {GiStairsGoal} from 'react-icons/gi'
 
-import services_ from '../assets/services_.png';
 
 const home_1 = () => {
   return (
@@ -18,7 +17,7 @@ const home_1 = () => {
                         <div className="home_1_two_col_con " id='home_1_big'>
                             <h1 className='home_1_h1 ' id='bigh1'>Awesome Feature</h1>
                             <p className="home_1_p" id='bigp'>Set have great you male grasses yielding yielding first their to called deep abundantly Set have great you male</p>
-                            <a href="#" id='a'>
+                            <a  href="/" id='a'>
                               <span>Read more</span>
                               <div class="liquid"></div>
                             </a>

@@ -49,7 +49,7 @@ const About = () => {
               <p>
                 <BiMap className="gettchicon" />
                 <b> Address</b> <IoIosArrowForward className="gettarrow" />
-                <a target="_blank" href="https://url1.io/s/eRYJP">
+                <a target="_blank" rel="noreferrer" href="https://url1.io/s/eRYJP">
                   {" "}
                   VNS. 9/351,Varanasi,U.P 221001
                 </a>
