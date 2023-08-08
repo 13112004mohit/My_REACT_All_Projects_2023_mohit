@@ -1,0 +1,110 @@
+
+.carsousel1_m_con{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+}
+
+.Acard{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+       justify-content: center;
+}
+.Acard>img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.Aintro{
+        width: 80%;
+        position: absolute;
+        top: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.Aintro>h1{
+        font-size: 4.5rem;
+        text-transform: uppercase;
+        margin: 0.01rem;
+        color: aliceblue;
+}
+@media(max-width:1024px){
+        
+.carsousel1_m_con{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+}
+
+.Acard{
+        width: 100%;
+        height: 50vh;
+        display: flex;
+       justify-content: center;
+}
+.Acard>img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+.Aintro>h1{
+        font-size: 3rem;
+        margin: 0.01rem;
+}
+}
+@media(max-width:554px){
+        
+.carsousel1_m_con{
+        width: 100%;
+        height: 35vh;
+        position: relative;
+}
+.Aintro{
+        width: 90%;
+}
+.Acard{
+        width: 100%;
+        height: 35vh;
+        display: flex;
+       justify-content: center;
+}
+.Acard>img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+}
+
+.Aintro>h1{
+        font-size: 2rem;
+        margin: 0.01rem;
+}
+}
+@media(max-width:394px){
+        
+.carsousel1_m_con{
+        width: 100%;
+        height: 30vh;
+        position: relative;
+}
+
+.Acard{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+       justify-content: center;
+}
+.Acard>img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.Aintro>h1{
+        font-size: 2rem;
+        margin: 0.01rem;
+}
+}

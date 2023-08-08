@@ -1,0 +1,273 @@
+.contact_m_con{
+   
+        height: 20rem;
+        background-image: url('https://images.pexels.com/photos/3783116/pexels-photo-3783116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+}
+
+.contactpg_F_con{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #00051b9d;
+}
+
+.contactpg_F_con>h1{
+        color: white;
+        font-weight: 500;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+}
+.contactpg_F_con>p{
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+}
+.contactpg_F_con>p>a{
+        color: #1a68f9;
+        text-decoration: none;
+        margin: 0 0rem 0 0;
+        transition: .5s ;
+        font-family: 'Open Sans', sans-serif;
+}
+.contactpg_F_con>p>a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+        margin: 0 0rem 0 0;
+} 
+
+
+
+/* content of contact page */
+
+.conact_m_S_con{
+        margin: 6rem 0;
+        padding: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+}
+.Fcon_contact{
+        width: 57rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+}
+
+.Fcon_contact>h1{
+        font-size: 2rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        color: #5a5555;
+        text-transform: uppercase;
+        margin: 0 0 1rem 0;
+        text-align: center;
+}
+.Fcon_contact>p{
+        width: 80%;
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.1rem;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        color: #666464c6;
+        position:relative;
+        top: .5rem;
+        text-align: center;
+}
+.contact_icons_datas{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: start;
+    position: relative;
+    align-items: start;
+    margin-top: 5rem;
+}
+
+.contact_gettch_Fst_data{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        border-radius: 0.4rem;
+        margin: .5rem 0;
+}
+.contact_gettch_Fst_data>p{
+        display: flex;
+        font-size: 1.1rem;
+        color: #5a5555;
+        font-family: 'Open Sans', sans-serif;
+        margin: .3rem 0 .3rem 0 ;
+        font-weight: 500;
+}
+.contact_gettch_Fst_data>p>a{
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #5a5555;
+        font-family: 'Open Sans', sans-serif;
+        margin: .3rem 0;
+}
+.contact_gettch_Fst_data>p>a:hover{
+        color: #ed1b24;
+}
+
+.gettchicon{
+        position:relative;
+        top: 7px ;
+        color: rgb(32 32 32);
+        font-size: 1.2rem;
+}
+.gettarrow{
+        position:relative;
+        top: 9px ;
+        color: rgb(54, 93, 219);
+        font-size: 1.2rem;
+}
+ .contact_gettch_Fst_data>p>b{
+        position:relative;
+        top: 4px ;
+        margin: 0 0 0 .5rem;
+}
+#sociconsize{
+        font-size: 1.3rem;
+        color: #ed1b24;
+        padding: 0 0.2rem;
+}
+
+
+
+.contact_img_con{
+    width:57rem;
+    height: 70vh;
+    overflow: hidden;
+}
+.contact_img_con>img{
+   width: 100%;
+   height: 100%;
+}
+
+
+
+@media(max-width:1244px){
+        
+        /* content of contact page */
+        
+        .conact_m_S_con{
+                margin: 6rem 0;
+                padding: 2rem 0;
+                display: flex;
+                flex-direction: column;
+        
+        }
+        .Fcon_contact{
+                width: 35rem;      
+                align-items: center;
+        }
+  
+        .contact_img_con{
+                width: 35rem;
+                height: 70vh;
+                overflow: hidden;
+                margin-top: 2rem;
+            }
+
+            .Fcon_contact>p{
+                text-align: center;
+            }
+      
+              
+              .contact_icons_datas {
+                width: 29rem;
+                  grid-template-columns: repeat(1,1fr);
+                  justify-items: center;
+                  position: relative;
+                  align-items: center;
+              }
+
+
+        
+     
+      
+   
+}
+
+@media(max-width:554px){
+        .contact_m_con{
+   
+                height: 15rem;
+        }
+        .contactpg_F_con>h1{
+                font-size: 3rem;
+        }
+        .contactpg_F_con>p{
+                font-size: 1.2rem;
+        }
+        .Fcon_contact{
+                width: 98%;
+        }
+        
+        .Fcon_contact>h1{
+                font-size: 1.6rem;
+        }
+        .Fcon_contact>p{
+                font-size: 1.1rem;
+                line-height: 1.1rem;
+        
+        }
+        .contact_icons_datas{
+                width: 97%;
+        }
+        .contact_gettch_Fst_data{
+                width: 100%;
+        }
+        .contact_gettch_Fst_data>p{
+                flex-wrap: wrap;
+                margin: .3rem 0 .3rem 1rem ;
+        }
+        .gettchicon{
+                position:relative;
+                top: 6px ;
+        }
+        .gettarrow{
+                position:relative;
+                top: 7px ;
+        }
+        .contact_gettch_Fst_data>p>b{
+                position:relative;
+                top: 3px ;
+        }
+        #sociconsize{
+                font-size: 1.3rem;
+        }
+   
+          .contact_img_con{
+                width: 98%;
+                height: 70vh;
+                overflow: hidden;
+            }
+             #whats{
+                display: none;
+             }
+}
+@media(max-width:494px){
+        .contact_img_con>img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+             }
+            
+}

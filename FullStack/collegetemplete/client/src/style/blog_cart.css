@@ -1,0 +1,109 @@
+.blog_m_con{
+        width: 22.2rem;
+        height: 31rem;
+        overflow: hidden;
+        border: 1px solid #dddddd;
+        border-radius: 0.9rem;
+        box-shadow: 0 0 20px #d4d1d1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: 2s;
+}
+.blog_m_con:hover{
+        cursor: pointer;
+        box-shadow: 0px 15px 20px 6px #d4d1d1;
+
+}
+.blog_img_box{
+        width: 100%;
+        height: 17rem;
+}
+.blog_img_box>img{
+        width: 100%;
+        height: 100%;
+}
+.blog_content_box{
+        width: 100%;
+        height: 13rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+}
+.date{
+        padding: 1rem;
+        color: #4a4848;
+        align-items: center;
+        display: flex;
+        gap: 0.5rem;
+}
+.blog_content_box>h1{
+        padding: 0 1rem;
+        font-size: 1.5rem;
+        color: #2a2929;
+        font-family: 'Roboto', sans-serif;
+        line-height: 2rem;
+        font-weight: 600;
+}
+#calendericn{
+        color: #05977d;
+}
+
+.towbox_con_blog{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+}
+.fst_blog{
+        text-align: center;
+        font-size: .9rem;
+        font-family: 'Lato', sans-serif;
+        color: hsl(169.55deg 100% 34.9%);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+}
+.imgcon{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 5rem;
+        overflow: hidden;
+}
+.imgcon>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+
+@media(max-width:554px){
+     
+  .blog_m_con{
+      width: 350px;
+      height: 450px;
+  }
+
+
+  .blog_img_box{
+        width: 100%;
+        height: 15rem;
+}
+}
+@media(max-width:384px){
+     
+        .blog_m_con{
+            width: 97%;
+            height: auto;
+        }
+      
+      
+        .blog_img_box{
+              width: 100%;
+              height: 15rem;
+      }
+        .blog_img_box>img{
+             object-fit: cover;
+      }
+      }
