@@ -10,6 +10,7 @@ import Notice from './pages/Notice'
 import Contact from './pages/Contact';
 import Footer from './components/Footer'
 // import GoTop from './components/GoTop';
+import Table from './pages/Table'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
            <Route path='/gallery' element={<Gallery/>} />
            <Route path='/notice' element={<Notice/>} />
            <Route path='/contact' element={<Contact/>} />
+           <Route path='/table' element={<Table/>} />
            <Route path="*" element={ <Navigate to="/" />} />
         </Routes>
         
