@@ -1,0 +1,130 @@
+.team_m_con{
+   
+        height: 25rem;
+        background-image: url('https://plus.unsplash.com/premium_photo-1661775181012-728308c602b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI1fHxza2V0Y2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+        position: relative;
+        top: -5rem;
+}
+
+.team_F_con{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #00051b9d;
+}
+
+.team_F_con>h1{
+        color: white;
+        font-weight: 500;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+}
+.team_F_con>p{
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+}
+.team_F_con>p>a{
+        color: #97acfe;
+        text-decoration: none;
+        margin: 0 0rem 0 0;
+        transition: .5s ;
+        font-family: 'Open Sans', sans-serif;
+}
+.team_F_con>p>a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+        margin: 0 0rem 0 0;
+} 
+
+
+
+/* content of contact page */
+.team_S_con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:3rem 0 8rem 0;
+}
+ .team_Cart_con{
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 4rem 1rem;
+    justify-items: center;
+ }
+
+
+
+
+ 
+@media(max-width:1264px){
+        .team_m_con{
+                height: 20rem;}
+        .team_F_con>h1{
+                color: white;
+                font-weight: 500;
+                font-size: 4rem;
+        }
+        .team_F_con>p{
+                font-size: 1.2rem;
+        }
+        .team_Cart_con{
+                width: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            gap: 4rem 1rem;
+            justify-items: center;
+         }
+
+}
+
+
+
+@media(max-width:714px){
+        .team_Cart_con{
+            grid-template-columns: repeat(1,1fr);
+            gap: 3rem 0rem;
+         }
+}
+@media(max-width:554px){
+        .team_m_con{
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+        }
+        .team_m_con{
+                height: 15rem;}
+        .team_F_con>h1{
+                color: white;
+                font-weight: 500;
+                font-size: 3rem;
+        }
+        .team_F_con>p{
+                font-size: 1.1rem;
+        }
+     
+
+        
+}
+
+@media(max-width:394px){
+        .team_m_con{
+                height: 15rem;
+        }
+        .team_F_con{
+                width: 100%;
+                height: 15rem;
+          }
+}

@@ -1,0 +1,144 @@
+.image-box {
+  width: 360px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  border-radius: .5rem;
+} 
+
+#img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+
+.image-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.185);
+  transition: all 0.3s ease-out;
+}
+
+.image-box:hover:before {
+  left: 0;
+}
+
+.overlay1{
+  position: absolute;
+  top: 0rem;
+  left: 0;
+   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 27, 27, 0.384);
+  box-shadow: 0px 3px 18px rgba(3, 3, 3, 0.482);
+  transition: opacity 0.5s ease;
+}     
+
+
+.overlay1>p {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  font-family: 'lato';
+}
+
+.image-box:hover .overlay1 {
+  opacity: 0;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.436);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay p {
+  color: #ffffff;
+  font-size: 1.15rem;
+  text-align: center;
+  font-family: 'lato';
+}
+
+.image-box:hover .overlay {
+  opacity: 1;
+}
+
+
+@media(max-width:1240px){
+
+ .two_three_row{
+          width: 36rem;
+          display:grid;
+          grid-template-columns: repeat(1,1fr);
+          gap: 2rem;
+          justify-items: center;
+          align-items: center;
+  }
+  .image-box {
+          width: 100%;
+          height: 400px;
+        } 
+}
+@media(max-width:937px){
+
+
+        .overlay1>p {
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+        .overlay>p {
+          font-weight: 400;
+          font-size: 1rem;
+        }
+}
+@media(max-width:554px){
+  .services_m_con{
+    margin: 5rem 0 7rem 0;
+    padding: 2rem 0;
+}
+  .two_three_row{
+    width: 95%;
+    height: auto;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 2rem;
+}
+
+.image-box {
+    width: 95%;
+    height: 400px;
+  } 
+  #services_compo_h1{
+          font-size: 1.6rem;
+  }
+  #services_compo_p{
+          font-size: 1rem;
+  }
+  .overlay1>p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+}
+

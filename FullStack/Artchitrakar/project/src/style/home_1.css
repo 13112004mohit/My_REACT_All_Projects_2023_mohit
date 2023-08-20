@@ -1,0 +1,243 @@
+
+     /* first container  */
+
+.home_1_main_con{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin: 8rem 0 -8rem 0;
+    bottom: 27rem;
+}
+
+.home_1_F_con_three{
+      
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     position: relative;
+     gap: 1.5rem;
+}
+
+.home_1_F_con_{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding:2rem 1rem;
+        border: 1px solid #4a4a4a;
+        background: #00000042;
+        border-radius: 0.5rem;
+        gap: 1rem;
+        min-height: 6rem;
+        max-height: auto;
+        width: 20rem;
+ 
+}
+
+#bigh1{
+        text-align: start;
+        font-size: 2rem;
+}
+
+#bigp{
+        text-align: start;   
+}
+.home_1_F_con_:hover{
+        border: 1px solid #0ce700;
+        background: #75747442;
+}
+
+
+.home_1_icon_con{
+        width: 6rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #e6eef5cc;
+}
+
+#home_1_icon{
+        font-size: 3rem;
+        color: rgb(102, 100, 100);
+        transition: .4s ease-in;
+}
+.home_1_F_con_:hover #home_1_icon{
+        color: #0ce700;
+}
+.home_1_two_col_con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 1.5rem;
+}
+
+.home_1_h1{
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+}
+
+.home_1_p{
+        color: rgb(213, 213, 213);
+        font-size: .9rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-align: center;
+        line-height: 1.3rem;
+
+}
+.home_1_F_con_:hover .home_1_p{
+        color: rgb(255, 255, 255);
+}
+
+
+
+@media(max-width:1264px){
+
+             /* first container  */
+        .home_1_main_con{
+                margin: 6rem 0 10rem 0;
+        }
+        
+        .home_1_F_con_three {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                top: 20rem;
+                align-items: center;
+                justify-items: center;
+            }
+        
+        .home_1_F_con_{
+                max-height: auto;
+                width: 49rem;
+         
+        }
+        
+        .home_1_icon_con{
+                width: 5rem;
+                height:5rem;
+        }
+        
+        .home_1_two_col_con{
+                width: 50%;
+        }
+         
+        
+
+        
+        
+}
+
+@media(max-width:814px){
+        /* first container  */
+        .home_1_main_con{
+                margin: 4.5rem 0 8.5rem 0;
+        }
+     
+        
+        .home_1_F_con_{
+                max-height: auto;
+                width:80%;
+         
+        }
+        
+        .home_1_icon_con{
+                width: 5rem;
+                height:5rem;
+        }
+        
+        .home_1_two_col_con{
+                width: 80%;
+        }
+        
+    
+        
+}
+
+@media(max-width:554px){
+        /* first container  */
+   
+     
+        
+        .home_1_F_con_{
+                max-height: auto;
+                width:85%;
+         
+        }
+        
+        .home_1_icon_con{
+                width: 5rem;
+                height:5rem;
+        }
+        
+        .home_1_two_col_con{
+                width: 80%;
+        }
+        .home_1_h1{
+                font-size: 1.2rem;
+        }
+    
+   
+        
+}
+@media(max-width:384px){
+
+             /* first container  */
+      
+    
+        .home_1_icon_con{
+                width: 3rem;
+                height:3rem;
+        }
+        
+        #home_1_icon{
+                font-size: 2rem;
+        }
+        
+        .home_1_two_col_con{
+                width: 90%;
+        }
+        .home_1_h1{
+                font-size: 1rem;
+        }
+        
+      
+
+  
+        
+        
+}
+@media(max-width:324px){
+     
+        
+        .home_1_F_con_{
+                max-height: auto;
+                width:80%;
+         
+        }
+        .home_1_icon_con{
+                width: 3rem;
+                height:3rem;
+        }
+        
+        #home_1_icon{
+                font-size: 2rem;
+        }
+        
+        .home_1_two_col_con{
+                width: 100%;
+        }
+        
+
+        
+
+}

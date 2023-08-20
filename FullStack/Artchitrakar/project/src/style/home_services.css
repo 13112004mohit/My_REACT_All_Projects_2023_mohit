@@ -1,0 +1,98 @@
+.h_srvs_m_con{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        gap: 3rem;  
+        margin: 6rem 0 0rem 0;
+        padding: 3rem 0 12rem 0;
+}
+
+.h_srvs_F_con{
+        width: 30rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+}
+
+.h_srvs_h1{
+        font-size: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+        color: hsl(215.71deg 77.78% 21.18%);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+}
+
+.h_srvs_p{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        color: #666464c6;
+        margin-top: .5rem;
+}
+.courses_latest{
+        width: 79vw;
+        align-items: center;
+        justify-items: center;
+    }
+
+.courses_ddt{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+@media(max-width:1324px){
+        .courses_latest{
+                width: 80vw;
+                align-items: center;
+                justify-items: center;
+            }
+        .courses_ddt {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                align-items: center;
+                justify-items: center;
+            }
+}
+
+@media(max-width:764px){
+        .courses_ddt {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+           }
+
+}
+
+@media(max-width:554px){
+            .h_srvs_h1 {
+                font-size: 1.6rem;
+            }
+
+            .h_srvs_F_con {
+                width: 90%;
+            }
+            .courses_latest{
+                width: 88vw;
+                align-items: center;
+                justify-items: center;
+            }
+}
+
+
+
+
+
+
+
+
+
+

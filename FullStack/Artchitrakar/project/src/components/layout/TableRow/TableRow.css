@@ -1,0 +1,91 @@
+
+.datatable-full{
+        height: 100%;
+        width: 95%;
+        overflow: scroll;
+        background: white;
+      } 
+      .datatable-full::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .dashboard-datatable-full{
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        background: rgba(255, 255, 255, 0);
+      }
+   
+      .dashboard-datatable-full::-webkit-scrollbar {
+        display: none;
+      }
+
+      .datable-towdiv{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .datatable-heading{
+        margin: 0.5rem 0.5rem 0.5em 0.3rem;
+        letter-spacing: .5px;
+        font-size: 1rem;
+        font-family: 'Roboto';
+        color: #262626;
+        text-transform: uppercase;
+      }
+      .dashboard-datatable-heading{
+        margin: 0.5rem 0.5rem 0.5em 0.3rem;
+        letter-spacing: .5px;
+        font-size: 1rem;
+        font-family: 'Roboto';
+        color: #262626;
+        text-transform: uppercase;
+      }
+      .show-button,
+      .edit-button,
+      .del-button {
+        background-color: #f6453800;
+        color: #da0d0d;
+        border: none;
+        padding: 5px 5px;
+        font-size: .8rem;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5rem;
+        transition: .5s;
+      
+      }
+      .del-button:hover {
+        background-color: #ffffff;
+        box-shadow: 0 0 8px 0px #5e5e5e;
+      }
+      
+      .show-button{
+      color: #46bcf7;
+      }
+      
+      .show-button:hover {
+        background-color: #ffffff;
+        box-shadow: 0 0 8px 0px #5e5e5e;
+      }
+      
+      .edit-button{
+        color: #1fb500;
+        margin: 0px -7px;
+      }
+      .edit-button:hover {
+        background-color: #ffffff;
+        box-shadow: 0 0 8px 0px #5e5e5e;
+      }
+      
+      .icon-table{
+        font-size: 1.5rem;
+        position: relative;
+        top: 0px;
+      }
+      

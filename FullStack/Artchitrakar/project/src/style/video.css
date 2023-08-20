@@ -1,0 +1,108 @@
+
+
+.two_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 7rem 0rem;
+        padding: 2rem 0;
+        background-image: url('https://images.unsplash.com/photo-1532949293134-3eb646d213f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fHBhaW50aW5nfGVufDB8MHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+        
+}
+.two_container>h1{
+        width: 45rem;
+        text-align: center;
+        font-size: 2rem;
+        font-family: 'Roboto', sans-serif;
+        color: hsl(0, 0%, 18%);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-bottom: 2rem;
+}
+
+.video_{
+        width: 47rem;
+        height: 27rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      
+}
+.imgbox{
+        width: 47rem;
+        height: 27rem;
+}
+.imgbox>img{
+        width: 100%;
+        height: 100%;
+        transition: .9s;
+        position: relative;
+        top: -1px;
+        left: -1px;
+}
+.video_:hover .imgbox>img{
+   transform: scale(1.2);
+}
+
+
+
+@media(max-width:1364px){
+        .two_container{
+                margin:0 0 7rem 0rem;
+                padding: 2rem 0;
+        }
+}
+@media(max-width:756px){
+        .two_container>h1{
+                width: 90%;
+                font-size: 2rem;
+        }
+
+            .video_ {
+                width: 35rem;
+                height: 21rem;
+                border-radius: 0.5rem;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .imgbox {
+                width: 35rem;
+                height: 21rem;
+            }
+}
+
+@media(max-width:556px){
+        .two_container>h1{
+                width: 90%;
+                font-size: 1.6rem;
+        }
+
+            .video_ {
+                width: 25rem;
+                height: 13rem;
+                border-radius: 0.5rem;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .imgbox {
+                width: 25rem;
+                height: 13rem;
+            }
+}
+@media(max-width:406px){
+      
+            .video_ {
+                width: 22rem;
+                height: 12rem;
+            }
+            .imgbox {
+                width: 22rem;
+                height: 12rem;
+            }
+}

@@ -1,0 +1,65 @@
+.top_btn{
+    
+        width: 40px;
+        height: 40px;
+        border-radius: 60%;
+        margin: 20px;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0%;
+        right: 0%;
+        border: 2px solid rgba(180, 191, 191, 0.874);
+        box-shadow: 0px 0px 7px rgb(161, 170, 171);
+        transition: .3s ease-in;
+        z-index: 9;
+    }
+    .top_btn:hover{
+        box-shadow:inset 0px 0px 7px rgb(165, 163, 161) ,0px 0px 10px rgba(255, 255, 255, 0.693);
+        border: 2px solid rgba(191, 201, 201, 0.485);
+    
+    }
+    
+    .top_img{
+        width: 35px;
+        position: relative;
+        left: 3px;
+    }
+
+
+    
+    /*  scroll effect */
+
+    #top_img_BS{
+        opacity: 0;
+
+    }
+    #top_img_AS{
+        opacity: 1;
+
+    }
+
+
+    
+    @media(max-width:1024px){
+        .top_btn{
+        bottom: 0%;
+        right: 0%;
+        }
+    }
+
+    @media (max-width:680px){
+        
+        .top_btn{
+            bottom: 0%;
+            right: 5%;
+                margin: 20px 0 20px 20px;
+            }
+        
+    }
+    @media (max-width:380px){
+        .top_btn{
+            bottom: 0%;
+        right: 7%;
+                margin: 20px 0 20px 20px;
+            }
+    }

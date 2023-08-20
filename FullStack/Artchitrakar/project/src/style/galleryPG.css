@@ -1,0 +1,112 @@
+
+
+.gallerypg_bgccon{
+        height: 25rem;
+        background-image: url('https://plus.unsplash.com/premium_photo-1661344220806-419dd85a190c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHNrZXRjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: bottom;
+        position: relative;
+        top: -5rem;
+}
+.gallerypg_F_con{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #001521b3;
+}
+
+.gallerypg_F_con>h1{
+        color: white;
+        font-weight: 500;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+}
+.gallerypg_F_con>p{
+        text-align: center;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+}
+.gallerypg_F_con>p>a{
+        color: #a1a7fe;
+        text-decoration: none;
+        margin: 0 0rem 0 0;
+        transition: .5s ;
+        font-family: 'Open Sans', sans-serif;
+}
+.gallerypg_F_con>p>a:hover{
+        color: #ffffff;
+        text-decoration: underline;
+        margin: 0 0rem 0 0;
+}
+.gallerypg_m_con{
+        margin:1rem 0 6rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -4rem;
+}
+
+
+
+#gallerypg_m_{
+        width: 98%;
+}
+#gallerypg{
+        border-radius: .1rem;
+        cursor: pointer;
+}
+#zoomout{
+        cursor: zoom-out;
+}
+
+
+@media(max-width:1224px){
+        .gallerypg_bgccon{
+                height: 20rem;
+        }
+   
+        .gallerypg_F_con>p{
+                font-size: 1.2rem;
+        }
+        #gallerypg_m_{
+                width: 97%;
+        }
+}
+
+@media(max-width:554px){
+        .gallerypg_F_con {
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+
+        .gallerypg_F_con>h1{
+                font-size: 3rem;
+        }
+        .gallerypg_F_con>p{
+                font-size: 1.1rem;
+        }
+        .gallerypg_bgccon{
+                height: 15rem;
+                background-size:110% 110%;
+                background-position: bottom;
+        }   #gallerypg_m_{
+                width: 97%;
+        }
+}
+
+@media(max-width:394px){
+        .gallerypg_bgccon{
+                height: 15rem;
+        }
+
+}

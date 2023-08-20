@@ -1,0 +1,128 @@
+.gallery_component_m_con{
+        margin: 4rem 0 13rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+}
+.galler7_component_F_con{
+        width: 33rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        text-align: center;
+        margin-bottom: 2rem;
+}
+#gallery_compo_h1{
+        font-size: 2.5rem;
+        font-family: 'Roboto', sans-serif;
+        color: hsl(215.71deg 77.78% 21.18%);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+}
+#gallery_compo_p{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        color: #666464c6;
+        margin-top: 0.5rem;
+}
+.gallery_component_m_con>a{
+        position: relative;
+        top: 3rem;
+}
+#forward_icon{
+        position: relative;
+        top: 2px;
+        margin-left: .5rem;
+        font-size: 1.3rem;
+}
+#gallery_m_con{
+        width: 69rem;
+        margin-top: 1rem;
+}
+
+#zoomin{
+        cursor: zoom-in;
+        max-width: 18rem;
+        max-height: 17rem;
+        height: 20rem;
+        width: auto;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        transition: .5s ;
+}
+#zoomin:hover{
+    box-shadow: 0 0 10px #06d51e;
+}
+#zoomout{
+        cursor: zoom-out;
+}
+
+.gallery{
+        position: absolute;
+        bottom: -14%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+
+@media(max-width:1365px){
+        #gallery_m_con{
+                width: 100%;
+             } 
+             .galler7_component_F_con{
+                width:72%;
+                /* width: 33rem; */
+        }
+}
+@media(max-width:1165px){
+  
+             .galler7_component_F_con{
+                width:72%;
+        }
+
+        #zoomin{
+                max-width: 18rem;
+                max-height: 17rem;
+                height: 14rem;
+        }
+}
+@media(max-width:674px){
+
+        .gallery_component_m_con{
+                margin: 4rem 0 10rem 0;
+        }
+
+        #gallery_m_con{
+                width:100%;
+             } 
+       .galler7_component_F_con{
+                width:90%;
+        }
+        #gallery_compo_h1{
+                font-size: 1.6rem;
+        }
+        #gallery_compo_p{
+                font-size: 1rem;
+                top: -2rem;
+                text-align: center;
+        }
+     
+        .gallery {
+                position: absolute;
+                bottom: -8%;
+                left: 50%;
+            }
+
+            #zoomin{
+                max-width: 18rem;
+                max-height: 14rem;
+                height: 11rem;
+        }
+}
