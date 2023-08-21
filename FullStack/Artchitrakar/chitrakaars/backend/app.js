@@ -7,21 +7,11 @@ const bodyParser = require('body-parser');
 const path = require('path');
 
 
-const allowedOrigins = ["http://localhost:3000","http://192.168.100.14:3000"];
+app.use(express.urlencoded({extended:true}))
 app.use(express.json())
-// app.use(cors({ 
-//         origin: ["http://localhost:3000","http://192.168.100.14:3000"],
-//         credentials: true })); 
-app.use(cors({
-        origin: function (origin, callback) {
-          if (!origin || allowedOrigins.includes(origin)) {
-            callback(null, true);
-          } else {
-            callback(new Error('Not allowed by CORS'));
-          }
-        },
-        credentials: true, // If your frontend sends cookies or authentication headers
-      }));
+app.use(cors({ 
+        origin: ["http://localhost:3000","http://192.168.100.14:3000"],
+        credentials: true })); 
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())

@@ -20,7 +20,7 @@ export const loginUser = (userData, callback) => async (dispatch) => {
       headers: {
         "Content-Type": "application/json"
       },
-      // withCredentials: true // Set withCredentials to true
+      withCredentials: true // Set withCredentials to true
     };
     const url = `${server}/login`;
     const { data } = await axios.post(url, userData, config);  // Corrected order
