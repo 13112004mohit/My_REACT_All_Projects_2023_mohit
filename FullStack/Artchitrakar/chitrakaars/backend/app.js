@@ -10,7 +10,7 @@ const path = require('path');
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(cors({ 
-        origin: ["http://localhost:3000","http://192.168.100.14:3000"],
+        origin: ["http://localhost:3000","http://192.168.100.14:3000","https://checkaps.netlify.app/"],
         credentials: true })); 
 app.use(cookieParser())
 app.use(bodyParser.urlencoded({ extended: false }))
