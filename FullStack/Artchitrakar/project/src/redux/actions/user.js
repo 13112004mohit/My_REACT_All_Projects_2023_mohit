@@ -20,10 +20,11 @@ export const loginUser = (userData, callback) => async (dispatch) => {
       headers: {
         "Content-Type": "application/json"
       },
-      withCredentials: true  // Move withCredentials here
+      // withCredentials: true // Set withCredentials to true
     };
     const url = `${server}/login`;
     const { data } = await axios.post(url, userData, config);  // Corrected order
+    console.log(data)
     dispatch({ type: "LoginUserSuccess", payload: data.user });
     if (callback) {
       callback(); // Invoke the callback function after the update
